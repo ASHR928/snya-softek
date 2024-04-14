@@ -27,6 +27,7 @@ export default {
         slcolor: "#0886E3",
         tbg: "#078BED",
         fbg: "#EBF7FF",
+        circlebg: "rgba(246, 246, 246, 0.57)",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],

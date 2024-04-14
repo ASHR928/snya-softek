@@ -51,12 +51,16 @@ export const navLinks = [
     id: "mission",
     title: "Mission",
   },
+  {
+    id: "footer",
+    title: "Contact Us",
+  },
 ];
 export const services = [
   {
     id: "service-1",
     icon: appdev,
-    title: "App dev",
+    title: "App Dev",
   },
   {
     id: "service-2",
@@ -99,95 +103,102 @@ export const services = [
 export const services2 = [
   {
     id: "service-1",
-    icon: mobiledev,
-    title: "App dev",
-    content:
-      "Innovative mobile applications that bring your ideas to life, enhancing user engagement and market presence.",
-  },
-  {
-    id: "service-2",
-    icon: cloud_,
-    title: "Cloud",
-    content:
-      "Seamless and scalable cloud architectures, empowering your business with flexibility, security, and optimal performance.",
-  },
-  {
-    id: "service-3",
-    icon: digitalM,
-    title: "Digital Marketing",
-    content:
-      "Elevating user interactions through intuitive and visually striking design, ensuring a memorable and user-centric digital experience.",
-  },
-  {
-    id: "service-4",
-    icon: data_a,
-    title: "Data Analytics",
-    content:
-      "Seamless and scalable cloud architectures, empowering your business with flexibility, security, and optimal performance.",
-  },
-  {
-    id: "service-5",
-    icon: sd,
-    title: "Software Dev",
-    content:
-      "Seamless and scalable cloud architectures, empowering your business with flexibility, security, and optimal performance.",
-  },
-  {
-    id: "service-6",
     icon: webdev,
     title: "Website",
     content:
       "Crafting compelling digital experiences through bespoke web solutions tailored to your brand's vision and objectives",
   },
   {
-    id: "service-7",
+    id: "service-2",
+    icon: mobiledev,
+    title: "App Dev",
+    content:
+      "Innovative mobile applications that bring your ideas to life, enhancing user engagement and market presence.",
+  },
+  {
+    id: "service-3",
+    icon: ui,
+    title: "UI/UX",
+    content:
+      "Elevating user interactions through intuitive and visually striking design, ensuring a memorable and user-centric digital experience.",
+  },
+  {
+    id: "service-4",
+    icon: cloud_,
+    title: "Cloud",
+    content:
+      "Seamless and scalable cloud architectures, empowering your business with flexibility, security, and optimal performance.",
+  },
+  {
+    id: "service-5",
     icon: Gis,
     title: "GIS Soln.",
     content:
       "Elevating user interactions through intuitive and visually striking design, ensuring a memorable and user-centric digital experience.",
   },
   {
-    id: "service-8",
-    icon: ui,
-    title: "UI/UX",
+    id: "service-6",
+    icon: sd,
+    title: "Software Dev",
+    content:
+      "Seamless and scalable cloud architectures, empowering your business with flexibility, security, and optimal performance.",
+  },
+  {
+    id: "service-7",
+    icon: digitalM,
+    title: "Digital Marketing",
     content:
       "Elevating user interactions through intuitive and visually striking design, ensuring a memorable and user-centric digital experience.",
+  },
+  {
+    id: "service-8",
+    icon: data_a,
+    title: "Data Analytics",
+    content:
+      "Seamless and scalable cloud architectures, empowering your business with flexibility, security, and optimal performance.",
   },
 ];
 
 export const projects = [
   {
     id: "1",
-    Number: "1",
+    Number: "01",
     title: "eKrishi Mandi Management System",
     content:
       " Our eMandi Solution is a comprehensive  platform designed for agricultural  markets. It digitizes the process of buying  and selling agricultural produce, providing a transparent and efficient solutions for Agriculture Mandi for  generating  entry/exit  gate  pass,  generating 6R, 9R receipts, maintaining  Online Stock register .",
   },
   {
     id: "2",
-    Number: "2",
+    Number: "02",
     title: " Single Login System",
     content:
       " Single Login System is based on single  window decision support system. This  solution enhances user convenience  and streamline various management features like Automation of Time Table Generation,  Efficiently managing Staff & Students  Information.",
   },
   {
     id: "3",
-    Number: "3",
+    Number: "03",
     title: "Online examination system  solutions",
     content:
       "  Our Online Examination System  Software simplifies the process of  conducting exams and assessments. It provides a secure and user-friendly  platform for creating, administering,  and grading online exams. This  software supports various question  types, customizable exam settings, robust result analysis.",
   },
   {
     id: "4",
-    Number: "4",
+    Number: "04",
     title: " GIS Solutions",
     content:
       " Anya Softek offers cutting-edge  Geographic Information System (GIS)  solutions. Our GIS solutions help  organizations visualize, analyze, and  interpret spatial data to make informed  decisions. We have developed customized  GIS applications  like Road Safety App,  Survey App, 3D Modeller, Planning  Calculator.",
   },
   {
     id: "5",
-    Number: "5",
+    Number: "05",
     title: "Forest Proposal  Management system",
+    content:
+      " A comprehensive software solution  for managing forest-related  proposals and projects. This  system facilitates the submission,  review, and approval process for  forestry projects, ensuring efficient  project management and  compliance with regulatory  requirements .",
+  },
+  {
+    id: "",
+    Number: "06",
+    title: "Single Nodal Agency",
     content:
       " A comprehensive software solution  for managing forest-related  proposals and projects. This  system facilitates the submission,  review, and approval process for  forestry projects, ensuring efficient  project management and  compliance with regulatory  requirements .",
   },

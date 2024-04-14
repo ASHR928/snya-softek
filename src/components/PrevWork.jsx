@@ -8,10 +8,12 @@ const PrevWork = () => {
       <div className="flex  flex-col ml-32">
         <h1
           style={{ letterSpacing: "0.7rem" }}
-          className={`${textStyles.g_heading} uppercase text-normal text-5xl`}>
+          className={`${textStyles.g_heading} uppercase mb-4 text-normal text-5xl`}>
           Our Esteemed Clients
         </h1>
-        <p className={`${textStyles.b_para} w-[1300px]  text-xl`}>
+        <p
+          style={{ textAlign: "justify" }}
+          className={`${textStyles.b_para} w-[1300px]  text-xl`}>
           We take pride in collaborating with visionary organizations across
           industries, transforming challenges into opportunities. Join our
           distinguished clientele and experience the impact of innovative

@@ -9,7 +9,7 @@ const emailContact = () => {
         // onChange={handleInputChange}
         placeholder="Enter your email"
         className="border border-gray-300 rounded-l-xl px-4 py-2 w-64 focus:outline-none focus:border-blue-500 sm:h-12"
-        style={{ height: "60px" }}
+        style={{ height: "70px", width: "80%" }}
       />
       <button
         // onClick={handleButtonClick}
@@ -17,7 +17,8 @@ const emailContact = () => {
         style={{
           background:
             "linear-gradient(180deg, #25A0FB 0%, #0886E3 0.01%, #68BFFF 72.4%, #B3DEFD 100%)",
-          height: "60px",
+          height: "70px",
+          width: "30%",
         }}>
         Let's talk
       </button>

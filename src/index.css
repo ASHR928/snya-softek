@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,499;1,499&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600&family=Montserrat:ital,wght@0,499;1,499&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gudea:ital,wght@0,400;0,700;1,400&family=Hind+Madurai:wght@300;400;500;600&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -17,7 +21,15 @@
 * {
   scroll-behavior: smooth;
 }
-
+.para {
+  text-align: "center";
+  font-family: "Hind Madurai";
+  font-size: 26px;
+  font-style: "normal";
+  font-weight: 300;
+  line-height: "normal";
+  letter-spacing: 1.3px;
+}
 .text-gradient {
   background: radial-gradient(
     64.18% 64.18% at 71.16% 35.69%,
@@ -110,10 +122,29 @@
   background: var(--black-gradient);
   box-shadow: var(--card-shadow);
 }
-
-.feedback-container .feedback-card:last-child {
-  margin-right: 0px;
+.Elipse {
+  border-radius: 1462px;
+  opacity: 0.65;
+  flex-shrink: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.07) 0%,
+    rgba(74, 32, 134, 0.07) 100%
+  );
+  box-shadow: 0px 5px 7.7px 7px rgba(0, 0, 0, 0.15);
 }
+
+.heading2 {
+  color: #0871be;
+  font-family: "Montserrat";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  font-variant: all-small-caps;
+  letter-spacing: 5.04px;
+}
+
 .custom-shadow {
   box-shadow: -4px -6px 4px 0px rgba(0, 0, 0, 0.25);
 }

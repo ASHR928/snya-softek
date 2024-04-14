@@ -1,6 +1,8 @@
 import React from "react";
 import { navLinks } from "../constants";
 import logo from "../assets/home/logo.svg";
+import cmi from "../assets/home/cmi.svg";
+
 import menu from "../assets/home/menu.svg";
 import cross from "../assets/home/cross.svg";
 import { useState, useEffect } from "react";
@@ -9,59 +11,48 @@ const Navbar = () => {
   const [active, setActive] = useState("Home");
   const [toggle, setToggle] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const [prevScrollPos, setPrevScrollPos] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
+      const threshold = 20; // Set your threshold value here
       const currentScrollPos = window.pageYOffset;
-      const isScrollingDown = currentScrollPos > prevScrollPos;
-      const isPastThreshold = currentScrollPos > 100; // Adjust the threshold as needed
-      setIsScrolled(isScrollingDown || isPastThreshold);
-      setPrevScrollPos(currentScrollPos);
+      const isScrollingDown = currentScrollPos > threshold;
+      setIsScrolled(isScrollingDown);
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [prevScrollPos]);
+  }, []);
   return (
     // "w-full flex fixed py-4 justify-around items-center navbar"
     <nav
-      className={`w-full pr-10 flex z-50 fixed py-4 justify-around items-center navbar ${
+      className={`w-full pr-10 flex z-50 fixed  justify-around items-center navbar ${
         isScrolled ? "bg-white shadow-md" : ""
       }`}>
       <div className="flex justify-between items-center w-full">
         <div className="flex justify-start ">
-          <img
-            src={logo}
-            alt="logo"
-            className="w-[158px] h-[73px] ml-10 mt-3"
-          />
+          <img src={logo} alt="logo" className="w-[173px] h-[83px] ml-10 " />
         </div>
 
         <div className="flex justify-center  flex-1 w-full">
-          <ul className="list-none flex sm:flex hidden justify-center items-center space-x-12 w-full">
+          <ul className="list-none flex sm:flex hidden  justify-center items-center space-x-12 w-full">
             {navLinks.map((nav, index) => (
               <li
                 key={nav.id}
-                className={`font-poppins font-normal cursor-pointer text-2xl text-black transition-transform hover:scale-110 `}>
+                style={{ fontFamily: "Montserrat" }}
+                className={` font-normal cursor-pointer  text-2xl text-black transition-transform hover:scale-110 `}>
                 <a href={`#${nav.id}`}>{nav.title}</a>
               </li>
             ))}
           </ul>
         </div>
 
-        <div>
-          <button
-            style={{
-              border: "2px solid",
-              borderColor: "transparent",
-              background:
-                "linear-gradient(172.29deg, #07547D 5.19%, #3BB7F9 93.4%)",
-              backgroundClip: "padding-box",
-            }}
-            className="hidden md:block w-[242px] h-[53px] text-white text-xl font-poppins mr-10 relative overflow-hidden transition-transform hover:scale-110 rounded-lg">
-            Get in touch
-          </button>
+        <div className="w-[173px] h-[72px] mt-4 mb-4 ">
+          <img
+            src={cmi}
+            alt="cmi"
+            className="w-[173px] h-[72px] ml-2 hidden md:block "
+          />
         </div>
         <div className="sm:hidden flex flex-1 justify-end items-center">
           <img

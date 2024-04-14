@@ -23,7 +23,11 @@ const Feedback = ({ quote, title, name }) => {
           />
         </div>
         <div className="flex flex-col pb-10">
-          <h3 className={`${textStyles.bl_heading}  text-xl`}>{name}</h3>
+          <h3
+            style={{ fontWeight: "500" }}
+            className={`${textStyles.bl_heading}    text-xl`}>
+            {name}
+          </h3>
           <span className={`${textStyles.g_heading}`}>{title}</span>
         </div>
       </div>
