@@ -5,7 +5,7 @@ import Slider from "../Carousel/Slider";
 const PrevWork = () => {
   return (
     <section className="flex-col flex ">
-      <div className="flex flex-col ml-4 md:ml-20">
+      <div className="flex flex-col ml-4 md:ml-32">
         <h1
           className={`${textStyles.g_heading} tracking-widest uppercase mb-2 text-lg md:text-xl lg:text-2xl`}>
           Our Esteemed Clients
@@ -18,7 +18,7 @@ const PrevWork = () => {
           solutions tailored to elevate your business in the digital landscape.
         </p>
       </div>
-      <div className="mt-4 mb-8 max-w-full">
+      <div className="mt-4 pr-4 ml-10 md:mr-8 mb-8 max-w-full">
         <Slider />
       </div>
     </section>

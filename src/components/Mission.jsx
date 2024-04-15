@@ -41,7 +41,7 @@ const Mission = () => {
             </p>
           </div>
         </div>
-        <div className="max-w-xl mx-auto">
+        <div className="max-w-xl mx-auto md:ml-20 md:pl-8">
           <div className="max-w-4xl mx-auto mt-32 px-4 lg:ml-12 lg:px-0 flex flex-col relative z-10">
             <div className="flex flex-wrap justify-center">
               <img
@@ -77,7 +77,7 @@ const Mission = () => {
             width="400px"
             height="400px"
             top="118px"
-            left="780px"
+            left="850px"
             className="bg-circlebg"
           />
         </div>

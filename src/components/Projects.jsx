@@ -15,7 +15,7 @@ const Projects = () => {
           Past Triumphs, Future Innovations
         </h3>
         <h1
-          style={{ letterSpacing: "0.5rem" }}
+          style={{ letterSpacing: "0.4rem" }}
           className={`${textStyle.b_heading} mt-2 md:mt-4 tracking-widest text-3xl md:text-5xl`}>
           OUR STORIED JOURNEY AT ANYA SOFTEK
         </h1>

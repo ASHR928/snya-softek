@@ -30,7 +30,7 @@ const Navbar = () => {
         isScrolled ? "bg-white shadow-md" : ""
       }`}>
       <div className="flex justify-start">
-        <img src={logo} alt="logo" className="w-auto h-12 ml-2 md:ml-4" />
+        <img src={logo} alt="logo" className="w-auto h-12  md:ml-8 pl-20" />
       </div>
 
       <div className="hidden sm:flex justify-center flex-1">
@@ -49,7 +49,8 @@ const Navbar = () => {
         <img
           src={cmi}
           alt="cmi"
-          className="w-auto h-12 mr-8 pr-10 md:mr-4 hidden md:block"
+          className="w-auto h-12 pr-10 md:mr-6
+           hidden md:block"
         />
 
         <img

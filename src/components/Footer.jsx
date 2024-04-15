@@ -15,7 +15,7 @@ const Footer = () => {
   return (
     <section className="relative" id="footer">
       <div className="p-20 ">
-        <div className=" absolute black-shadow justify-center flex-col  w-[70%] end-0 rounded-l-3xl  h-[25%] bg-tbg">
+        <div className=" absolute black-shadow justify-center flex-col  w-[50%] end-0 rounded-l-3xl  h-[25%] bg-tbg">
           <h3
             style={{
               letterSpacing: "0.4rem",
@@ -40,7 +40,7 @@ const Footer = () => {
               fontFamily: "Hind Madurai",
               fontSize: "0.7rem",
             }}
-            className={`${textStyles.b_para} pl-8 font-bold  w-[70%] text-white`}>
+            className={`${textStyles.b_para} pl-8 font-bold  w-[90%] text-white`}>
             Fuelled with inspiration and armed with strategic insights, let's
             embark on the journey of progress together. It's time to roll up our
             sleeves{" "}

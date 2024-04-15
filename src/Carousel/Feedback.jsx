@@ -6,7 +6,7 @@ import favicon from "../assets/favicon.png";
 
 const Feedback = ({ quote, title, name }) => {
   return (
-    <div className="rounded flex flex-col md:w-[70%] cursor-pointer bg-fbg custom-shadow transition-transform hover:scale-110">
+    <div className="rounded flex flex-col md:w-[70%]  cursor-pointer bg-fbg custom-shadow transition-transform hover:scale-110">
       <div className="flex flex-col justify-center items-center text-center">
         <img src={quote1} alt="quote" className="mt-2 mb-2 md:mt-4 md:mb-4" />
         <p

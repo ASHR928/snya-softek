@@ -10,7 +10,7 @@ const Circle = ({ width, height, top, left }) => {
 
   return (
     <div
-      className="absolute bg-circlebg rounded-full"
+      className="absolute hidden md:block bg-circlebg rounded-full"
       style={circleStyle}></div>
   );
 };

@@ -33,8 +33,8 @@ const CardCarousel = () => {
       {projects.map((project) => (
         <SwiperSlide
           style={{
-            width: "784px",
-            height: "400px",
+            maxWidth: "50%",
+            height: "300px",
 
             backgroundImage: `url(${cardbg})`,
             backgroundSize: "cover",
@@ -52,7 +52,7 @@ const CardCarousel = () => {
                 fontFamily: "Montserrat",
                 fontWeight: "400",
 
-                fontSize: "232px",
+                fontSize: "180px",
                 letterSpacing: "5.4px",
                 color: "rgba(255, 255, 255, 0.75)", // Adjust color and opacity as needed
                 // Add padding for spacing
@@ -62,7 +62,7 @@ const CardCarousel = () => {
             <h2
               style={{
                 fontFamily: "Montserrat",
-                fontSize: "36px",
+                fontSize: "1.8rem",
                 letterSpacing: "5.4px",
                 textAlign: "center",
               }}
@@ -72,9 +72,9 @@ const CardCarousel = () => {
             <p
               style={{
                 fontFamily: "Hind Madurai",
-                fontSize: "18px",
+                fontSize: "0.8rem",
                 letterSpacing: "2.8px",
-                maxWidth: "678px",
+                maxWidth: "80%",
               }}
               className={`${textStyles.b_para} ml-20 mr-20 mt-2 mb-20 pb-4 justify-center text-center items-center`}>
               {project.content}

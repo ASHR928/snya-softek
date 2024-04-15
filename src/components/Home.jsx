@@ -1,6 +1,6 @@
 import React from "react";
 import { services } from "../constants";
-import EmailContact from "../contact/emailContact";
+import HomeEmail from "../contact/HomeEmail";
 
 const Home = () => {
   return (
@@ -66,7 +66,7 @@ const Home = () => {
       </div>
 
       <div className="mx-auto flex flex-wrap justify-center gap-8 mt-15 mb-20">
-        <EmailContact />
+        <HomeEmail />
       </div>
     </section>
   );

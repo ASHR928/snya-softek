@@ -37,7 +37,7 @@ const ServicePage = () => {
                   <img
                     src={service.icon}
                     alt={service.title}
-                    className="md:w-[15%]"
+                    className="w-[33px] h-[33px]"
                   />
                   <h3 className="mt-2 md:w-[80%] border-b border-gray-600 text-black font-montserrat text-lg md:text-xl text-center md:text-left">
                     {service.title}
@@ -73,7 +73,7 @@ const ServicePage = () => {
                 <img
                   src={service.icon}
                   alt={service.title}
-                  className="md:w-[12%]"
+                  className="w-[33px] h-[33px]"
                 />
                 <h3 className="mt-2 md:w-[80%] border-b border-gray-600 text-black font-montserrat text-lg md:text-xl text-center md:text-left">
                   {service.title}
