@@ -49,7 +49,7 @@ const Navbar = () => {
         <img
           src={cmi}
           alt="cmi"
-          className="w-auto h-12 mr-2 md:mr-4 hidden md:block"
+          className="w-auto h-12 mr-8 pr-10 md:mr-4 hidden md:block"
         />
 
         <img

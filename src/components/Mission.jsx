@@ -17,7 +17,7 @@ const Mission = () => {
           </h3>
           <h2
             style={{ fontfamily: "Montserrat", letterSpacing: "0.5rem" }}
-            className="mt-0 flex justify-start font-montserrat font-normal text-black pr-8 text-4xl">
+            className="mt-0 flex justify-start font-montserrat font-normal text-black pr-8 text-5xl">
             Our Mission
           </h2>
           <div className="max-w-l text-center flex justify-center mt-10 ">

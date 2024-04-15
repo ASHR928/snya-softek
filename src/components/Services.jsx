@@ -11,7 +11,7 @@ const ServicePage = () => {
     <section
       id="services"
       className="flex justify-center text-center relative flex-col mb-20">
-      <div className="flex flex-col md:ml-32 md:mr-20 md:mt-20  md:flex-row justify-between">
+      <div className="flex flex-col md:ml-32 md:mr-20 md:mt-10 md:flex-row justify-between">
         <div className=" flex flex-col justify-center text-center relative max-w-3xl">
           <h3
             className={`${textStyle.g_heading} text-2xl tracking-widest justify-start`}>
@@ -33,7 +33,7 @@ const ServicePage = () => {
               {services2.slice(0, 4).map((service) => (
                 <div
                   key={service.id}
-                  className="flex flex-col mb-10 md:w-[50%] pb-8   md:px-0">
+                  className="flex flex-col  md:w-[50%] mt-6 transition-transform hover:scale-110 cursor-pointer   md:px-0">
                   <img
                     src={service.icon}
                     alt={service.title}
@@ -51,21 +51,25 @@ const ServicePage = () => {
           </div>
         </div>
         <div className="">
-          <img src={img2} alt="img2" className="md:w-[100%] md:mt-20" />
+          <img
+            src={img2}
+            alt="img2"
+            className=" hidden md:block md:w-[100%] md:mt-20 mb-4"
+          />
         </div>
       </div>
 
       {/* Right Section */}
       <div className="flex md:ml-32 md:mr-10">
         <div>
-          <img src={img1} alt="img1" className="" />
+          <img src={img1} alt="img1" className=" hidden md:block md:w-70%" />
         </div>
         <div className="flex justify-center text-center md:w-[90%] relative md:ml-20">
           <div className="flex flex-wrap justify-center mr-4 max-w-6xl  md:justify-between">
             {services2.slice(4).map((service) => (
               <div
                 key={service.id}
-                className="flex flex-col mb-10 md:w-[50%]  pt-8   md:px-0">
+                className="flex flex-col md:w-[50%]  mt-6 transition-transform hover:scale-110 cursor-pointer   md:px-0">
                 <img
                   src={service.icon}
                   alt={service.title}
