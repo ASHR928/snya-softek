@@ -8,29 +8,27 @@ import frame4 from "../assets/frame4.svg";
 const Mission = () => {
   return (
     <section className="flex justify-start text-center relative" id="mission">
-      <div className="relative w-full flex">
-        <div className="ml-40 mt-32 flex flex-col justify-start text-center mb-40 max-w-9xl relative">
+      <div className="relative  flex">
+        <div className="ml-32 mt-32 flex flex-col justify-start text-center mb-40  relative">
           <h3
             style={{ fontfamily: "Montserrat", letterSpacing: "0.5rem" }}
-            className="flex justify-start font-montserrat font-normal text-tcolor pr-8 text-2xl">
+            className="flex justify-start font-montserrat font-normal text-tcolor pr-8 text-xl">
             ABOUT US
           </h3>
           <h2
             style={{ fontfamily: "Montserrat", letterSpacing: "0.5rem" }}
-            className="mt-0 flex justify-start font-montserrat font-normal text-black pr-8 text-6xl">
+            className="mt-0 flex justify-start font-montserrat font-normal text-black pr-8 text-4xl">
             Our Mission
           </h2>
-          <div className="w-[594px] h-[390px] text-center flex justify-center mt-10 pt-4">
+          <div className="max-w-l text-center flex justify-center mt-10 ">
             <p
               style={{
                 fontFamily: "Hind Madurai",
                 letterSpacing: "2.2px",
-                fontSize: "22px",
-                maxWidth: "594px",
-                maxHeight: "390px",
+
                 textAlign: "justify",
               }}
-              className="justify-center   font-normal text-left  text-black pr-8">
+              className="justify-center max-w-xl   font-normal text-left  text-black pr-8">
               To make software development simple and accessible.
               <br /> With a collective experience of around 13 years in the
               industry, we embark on every project with a commitment to
@@ -43,25 +41,46 @@ const Mission = () => {
             </p>
           </div>
         </div>
+        <div className="max-w-xl mx-auto">
+          <div className="max-w-4xl mx-auto mt-32 px-4 lg:ml-12 lg:px-0 flex flex-col relative z-10">
+            <div className="flex flex-wrap justify-center">
+              <img
+                src={frame3}
+                alt="frame3"
+                className="max-w-full h-auto lg:mt-6 lg:mr-2  lg:mb-0"
+                style={{ maxHeight: "175px" }}
+              />
+              <img
+                src={frame2}
+                alt="frame2"
+                className="max-w-full h-auto lg:mt-20 lg:mb-0"
+                style={{ maxHeight: "125px" }}
+              />
+            </div>
+            <div className="flex flex-wrap justify-center">
+              <img
+                src={frame4}
+                alt="frame4"
+                className="max-w-full h-auto mb-4 lg:mt-2  lg:mr-2   lg:mb-0"
+                style={{ maxHeight: "125px" }}
+              />
+              <img
+                src={frame1}
+                alt="frame1"
+                className="max-w-full h-auto lg:mt-2 mb-4 lg:mb-0"
+                style={{ maxHeight: "200px" }}
+              />
+            </div>
+          </div>
 
-        <div className=" flex flex-col relative mt-32 ml-96 z-10">
-          <div className="flex ">
-            <img src={frame3} alt="frame3" className="" />
-            <img src={frame2} alt="frame2" className="ml-4  mt-20 pt-2" />
-          </div>
-          <div className="flex mb-20 ">
-            <img src={frame4} alt="frame4" className="mb-32" />
-            <img src={frame1} alt="frame1" className="ml-4 mt-2  " />
-          </div>
+          <Circle
+            width="400px"
+            height="400px"
+            top="118px"
+            left="780px"
+            className="bg-circlebg"
+          />
         </div>
-
-        <Circle
-          width="500px"
-          height="500px"
-          top="118px"
-          left="1200px"
-          className="bg-circlebg"
-        />
       </div>
     </section>
   );

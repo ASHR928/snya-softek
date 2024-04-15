@@ -15,7 +15,7 @@ function App() {
   return (
     <div
       className="
-     w-full overflow-visible ">
+     w-full overflow-hidden">
       <div style={{ backgroundImage: `url(${bg})`, backgroundSize: "cover" }}>
         <div className={`${styles.boxWidth}`}>
           <Navbar />

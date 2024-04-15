@@ -8,27 +8,27 @@ import CardCarousel from "../Carousel/CardCarousel";
 const Projects = () => {
   return (
     <section id="projects" className="flex justify-center text-center flex-col">
-      <div className="flex justify-center items-center flex-col">
+      <div className="flex justify-center items-center flex-col mx-4 md:mx-8">
         <h3
           style={{ letterSpacing: "0.5rem" }}
-          className={`${textStyle.g_heading} mt-5 pr-8 text-2xl justify-center tracking-widest leading-normal`}>
+          className={`${textStyle.g_heading} mt-2 md:mt-4 text-base md:text-xl tracking-widest leading-normal`}>
           Past Triumphs, Future Innovations
         </h3>
         <h1
           style={{ letterSpacing: "0.5rem" }}
-          className={`${textStyle.b_heading} pr-8 text-5xl mt-4 justify-center`}>
+          className={`${textStyle.b_heading} mt-2 md:mt-4 tracking-widest text-3xl md:text-5xl`}>
           OUR STORIED JOURNEY AT ANYA SOFTEK
         </h1>
         <p
           style={{ letterSpacing: "0.3rem" }}
-          className={`${textStyle.b_para} w-[1100px] mt-8 items-center  h-[148px]  text-xl lading-normal`}>
+          className={`${textStyle.b_para} w-full md:w-[80%] tracking-widest mt-4 md:mt-8 text-sm md:text-base leading-normal`}>
           Step into the legacy of success with ASCPL as we proudly showcase our
           past projects. Each venture is a testament to our commitment to
           excellence and innovation. From groundbreaking web and mobile app
           development to creating unforgettable brand identities.
         </p>
       </div>
-      <div className="w-full pt-32 pb-32">
+      <div className="mt-4 md:mt-8 pb-8">
         <CardCarousel />
       </div>
     </section>
