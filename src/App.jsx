@@ -22,7 +22,7 @@ function App() {
         </div>
 
         <div className={`${styles.flexStart} ${styles.paddingX} `}>
-          <div className={`${styles.boxWidth}`}>
+          <div id="home" className={`${styles.boxWidth}`}>
             <Home />
           </div>
         </div>

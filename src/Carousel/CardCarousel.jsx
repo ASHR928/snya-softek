@@ -33,17 +33,18 @@ const CardCarousel = () => {
       {projects.map((project) => (
         <SwiperSlide
           style={{
-            maxWidth: "50%",
-            height: "300px",
+            // maxWidth: "50%",
+            // height: "300px",
 
             backgroundImage: `url(${cardbg})`,
             backgroundSize: "cover",
             borderRadius: "20px",
           }}
+          className="md:w-50% w-[70%] md:h-[300px] h-[200px]"
           key={project.id}>
           <div className="card relative">
             <div
-              className="mb-52 font-bold"
+              className="mb-52 md:text-9xl text-xl font-bold"
               style={{
                 position: "absolute",
                 top: "-100px",
@@ -52,7 +53,6 @@ const CardCarousel = () => {
                 fontFamily: "Montserrat",
                 fontWeight: "400",
 
-                fontSize: "180px",
                 letterSpacing: "5.4px",
                 color: "rgba(255, 255, 255, 0.75)", // Adjust color and opacity as needed
                 // Add padding for spacing
@@ -62,21 +62,21 @@ const CardCarousel = () => {
             <h2
               style={{
                 fontFamily: "Montserrat",
-                fontSize: "1.8rem",
+
                 letterSpacing: "5.4px",
                 textAlign: "center",
               }}
-              className={`${textStyles.bl_heading} text-secondary mx-auto mt-10 pt-6 `}>
+              className={`${textStyles.bl_heading} text-secondary md:text-3xl text-base mx-auto md:mt-10 mt-4 pt-2 md:pt-6 `}>
               {project.title}
             </h2>
             <p
               style={{
                 fontFamily: "Hind Madurai",
-                fontSize: "0.8rem",
+
                 letterSpacing: "2.8px",
                 maxWidth: "80%",
               }}
-              className={`${textStyles.b_para} ml-20 mr-20 mt-2 mb-20 pb-4 justify-center text-center items-center`}>
+              className={`${textStyles.b_para} md:ml-20 ml-6 pb-10 text-xxs mt-4 md:mr-20 md:text-xs text-sm md:mt-2 md:mb-20 md:pb-4 justify-center text-center items-center`}>
               {project.content}
             </p>
           </div>

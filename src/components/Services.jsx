@@ -10,8 +10,8 @@ const ServicePage = () => {
   return (
     <section
       id="services"
-      className="flex justify-center text-center relative flex-col mb-20">
-      <div className="flex flex-col md:ml-32 md:mr-20 md:mt-10 md:flex-row justify-between">
+      className="flex justify-center text-center relative flex-col md:mb-20">
+      <div className="flex flex-col ml-6 mt-6 md:ml-32 md:mr-20 md:mt-4 md:flex-row justify-between">
         <div className=" flex flex-col justify-center text-center relative max-w-3xl">
           <h3
             className={`${textStyle.g_heading} text-2xl tracking-widest justify-start`}>
@@ -22,7 +22,7 @@ const ServicePage = () => {
             What We Do
           </h1>
           <div className="h-auto max-w-2xl  text-center flex justify-center mt-4">
-            <p className="font-poppins font-normal text-center md:text-left text-l px-4 md:px-0">
+            <p className="font-poppins font-normal text-left md:text-left  text-l px-2 md:px-0">
               At ASCSPL, we propel businesses towards success with our strategic
               expertise, cutting-edge solutions, offered services and an
               unwavering commitment to excellence.
@@ -33,16 +33,16 @@ const ServicePage = () => {
               {services2.slice(0, 4).map((service) => (
                 <div
                   key={service.id}
-                  className="flex flex-col  md:w-[50%] mt-6 transition-transform hover:scale-110 cursor-pointer   md:px-0">
+                  className="flex flex-col w-[50%]   md:w-[50%] mt-6 transition-transform hover:scale-110 cursor-pointer   md:px-0">
                   <img
                     src={service.icon}
                     alt={service.title}
                     className="w-[33px] h-[33px]"
                   />
-                  <h3 className="mt-2 md:w-[80%] border-b border-gray-600 text-black font-montserrat text-lg md:text-xl text-center md:text-left">
+                  <h3 className="mt-2 md:w-[80%] w-[80%] border-b border-gray-600 text-black font-montserrat text-lg md:text-xl text-left md:text-left">
                     {service.title}
                   </h3>
-                  <p className="mt-2  text-black w-[98%] font-poppins text-left  text-xs md:text-sm font-normal leading-normal tracking-wide">
+                  <p className="mt-2  text-black w-[98%] font-poppins text-left  text-xs md:text-xs font-normal leading-normal tracking-wide">
                     {service.content}
                   </p>
                 </div>
@@ -54,31 +54,31 @@ const ServicePage = () => {
           <img
             src={img2}
             alt="img2"
-            className=" hidden md:block md:w-[100%] md:mt-20 mb-4"
+            className=" md:block md:w-[100%] mt-4 md:mt-20 mb-4"
           />
         </div>
       </div>
 
       {/* Right Section */}
-      <div className="flex md:ml-32 md:mr-10">
+      <div className="md:flex ml-6 md:ml-32 md:mr-10 mb-4">
         <div>
-          <img src={img1} alt="img1" className=" hidden md:block md:w-70%" />
+          <img src={img1} alt="img1" className="   md:w-100%" />
         </div>
         <div className="flex justify-center text-center md:w-[90%] relative md:ml-20">
-          <div className="flex flex-wrap justify-center mr-4 max-w-6xl  md:justify-between">
+          <div className="flex flex-wrap justify-center mr-4 max-w-7xl  md:justify-between">
             {services2.slice(4).map((service) => (
               <div
                 key={service.id}
-                className="flex flex-col md:w-[50%]  mt-6 transition-transform hover:scale-110 cursor-pointer   md:px-0">
+                className="flex flex-col md:w-[50%] w-[50%]  mt-6 transition-transform hover:scale-110 cursor-pointer   md:px-0">
                 <img
                   src={service.icon}
                   alt={service.title}
                   className="w-[33px] h-[33px]"
                 />
-                <h3 className="mt-2 md:w-[80%] border-b border-gray-600 text-black font-montserrat text-lg md:text-xl text-center md:text-left">
+                <h3 className="mt-2 md:w-[80%] w-[80%] border-b border-gray-600 text-black font-montserrat text-lg md:text-xl text-left md:text-left">
                   {service.title}
                 </h3>
-                <p className="mt-2  text-black w-[98%]  font-poppins text-center md:text-left text-xs md:text-sm font-normal leading-normal tracking-wide">
+                <p className="mt-2  text-black w-[98%]  font-poppins text-left md:text-left text-xs md:text-xs font-normal leading-normal tracking-wide">
                   {service.content}
                 </p>
               </div>

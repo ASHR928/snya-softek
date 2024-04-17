@@ -4,9 +4,13 @@ export default {
   mode: "jit",
   theme: {
     fontSize: {
-      sm: "0.8rem",
+      xxss: "0.2rem",
+      xxs: "0.5rem",
+      sm: "0.6rem",
+      xs: "0.8rem",
       base: "1rem",
       xl: "1.25rem",
+
       "2xl": "1.563rem",
       "3xl": "1.953rem",
       "4xl": "2.441rem",
@@ -14,7 +18,7 @@ export default {
       "6xl": "3.75rem",
       "7xl": "4.5rem",
       "8xl": "6rem",
-      "9xl": "481px",
+      "9xl": "11rem",
     },
     extend: {
       colors: {

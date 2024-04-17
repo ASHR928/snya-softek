@@ -4,19 +4,17 @@ import HomeEmail from "../contact/HomeEmail";
 
 const Home = () => {
   return (
-    <section
-      id="home"
-      className="mt-28 flex flex-col mx-auto px-4 sm:px-6 lg:px-8 justify-center text-center">
+    <section className="mt-28 flex flex-col mx-auto px-4 sm:px-6 lg:px-8 justify-center text-center">
       <div className="flex flex-col">
         <div className="mt-4">
           <h3
             style={{
               fontFamily: "Montserrat",
               letterSpacing: "5px",
-              fontSize: "30px",
+
               fontWeight: "500",
             }}
-            className="text-tertiary font-medium">
+            className="text-tertiary text-xs  sm:text-2xl md:text-2xl  font-medium">
             WE ARE ANYA SOFTEK
           </h3>
         </div>
@@ -25,17 +23,18 @@ const Home = () => {
             style={{
               fontFamily: "Montserrat",
             }}
-            className="text-black tracking-widest max-w-5xl text-6xl font-normal">
+            className="text-black max-w-5xl  tracking-widest text-2xl sm:text-3xl md:text-6xl font-normal">
             BRINGING SOFTWARE IDEAS TO LIVE
           </h1>
         </div>
+
         <div>
           <p
             style={{
               fontFamily: "Hind Madurai",
               letterSpacing: "5%",
             }}
-            className="mx-auto max-w-4xl text-center text-xl justify-center items-center">
+            className="mx-auto max-w-4xl text-center text-l  md:text-xl justify-center items-center">
             A pioneering Indian company with 12 years of expertise in software
             consultancy. Based in Dehradun, Uttarakhand, ASCSPL excels in web
             development, mobile app development, branding, UI/UX, and cloud
@@ -44,23 +43,19 @@ const Home = () => {
           </p>
         </div>
       </div>
-      <div className="mx-auto flex  justify-center gap-8 mt-20 mb-20">
+      <div className="mx-auto flex flex-wrap justify-center gap-4 md:gap-8 mt-20 mb-20">
         {services.map((service) => (
           <div
             key={service.id}
-            className="flex items-center  flex-col transition-transform hover:scale-110"
-            style={{ width: "25%" }}>
+            className="flex flex-col items-center w-full sm:w-1/2 sm:flex-1 md:w-[25%] transition-transform hover:scale-110">
             <img
-              style={{ width: "70%" }}
               src={service.icon}
               alt={service.title}
-              className=" h-auto mb-2 cursor-pointer" // Adjust width
+              className="mb-2 sm:w-[20px] md:w-[60px] cursor-pointer"
             />
-            <div className="flex flex-col justify-center">
-              <p className="font-montserrat text-lg text-center">
-                {service.title}
-              </p>
-            </div>
+            <p className="font-montserrat text-sm md:text-base text-center">
+              {service.title}
+            </p>
           </div>
         ))}
       </div>
