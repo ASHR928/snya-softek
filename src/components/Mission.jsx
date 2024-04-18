@@ -52,20 +52,20 @@ const Mission = () => {
               <img
                 src={frame2}
                 alt="frame2"
-                className="max-w-full md:h-[125px] h-[70px] md:mt-0 mt-14 md:pt-0 md:ml-0 ml-2 h-auto lg:mt-20 lg:mb-0"
+                className="max-w-full md:h-[125px] h-[60px] md:mt-0 mt-16 md:pt-0 md:ml-0 ml-2 h-auto lg:mt-20 lg:mb-0"
               />
             </div>
             <div className="flex flex-wrap justify-center">
               <img
                 src={frame4}
                 alt="frame4"
-                className="max-w-full h-auto md:h-[125px] h-[70px] md:mt-0 mt-2 md:mr-0 mr-2 lg:mt-2  lg:mr-2   lg:mb-0"
+                className="max-w-full h-auto md:h-[125px] h-[60px] md:mt-0 mt-2 md:mr-0 mr-2 lg:mt-2  lg:mr-2   lg:mb-0"
                 style={{ maxHeight: "125px" }}
               />
               <img
                 src={frame1}
                 alt="frame1"
-                className="max-w-full h-auto md:h-[200px] h-[110px] md:mt-0 mt-2 lg:mt-2 mb-4 lg:mb-0"
+                className="max-w-full h-auto md:h-[200px] h-[90px] md:mt-0 mt-2 lg:mt-2 mb-4 lg:mb-0"
               />
             </div>
           </div>
