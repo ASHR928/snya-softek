@@ -12,11 +12,11 @@ const Card = ({ title, logo }) => {
         <img
           src={logo1}
           alt="logo1"
-          className="md:mb-10 mb-6 md:w-[30px] w-[10px] "
+          className="md:mb-10 mb-6 md:w-[30px] w-[15%] "
         />
         <div className="flex items-center">
           <h2
-            className={`${textStyles.bl_heading} md:text-base text-[3px] md:W-[70%] w-[40%] ml-2   text-cdcolor md:m-2 font-semibold md:ml-4`}>
+            className={`${textStyles.bl_heading} md:text-base text-[4px] md:W-[70%] w-[40%] ml-2   text-cdcolor md:m-2 font-semibold md:ml-4`}>
             {title}
           </h2>
         </div>
@@ -24,7 +24,7 @@ const Card = ({ title, logo }) => {
           <img
             src={logo}
             alt="logo"
-            className="md:w-[80px] w-[25px] md:mr-0 mr-[3px]"
+            className="md:w-[80px] w-[35%] md:mr-0 mr-[3px]"
           />
         </div>
       </div>

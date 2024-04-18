@@ -14,7 +14,7 @@ const Feedback = ({ quote, title, name }) => {
           className="md:mt-2 md:mb-2 md:mt-4 w-[10px] mb-2 mt-2 md:w-[80px] md:mb-4"
         />
         <p
-          className={`${textStyles.b_para} mb-[1px] md:text-base text-[6px] md:mb-4 pl-2 pr-6 md:pl-6 md:pr-6 md:pl-10 md:pr-10`}>
+          className={`${textStyles.b_para} mb-[1px] md:text-base text-[6px] md:mb-4 pl-2 pr-2 md:pl-6 md:pr-6 md:pl-10 md:pr-10`}>
           {quote}
         </p>
       </div>
