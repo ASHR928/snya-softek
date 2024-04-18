@@ -35,7 +35,7 @@ const Footer = () => {
             style={{
               fontFamily: "Hind Madurai",
             }}
-            className={`${textStyles.b_para} md:pl-8 md:tracking-widest md:pb-0 pb-4 tracking-wide pl-4 font-bold md:text-sm text-[8px] md:w-[90%] w-[100%] text-white`}>
+            className={`${textStyles.b_para} md:pl-8 md:tracking-widest md:pb-0 pb-4 tracking-wide pl-4 font-bold md:text-sm text-[7px] md:w-[90%] w-[100%] text-white`}>
             Fuelled with inspiration and armed with strategic insights, let's
             embark on the journey of progress together. It's time to roll up our
             sleeves{" "}
@@ -71,15 +71,14 @@ const Footer = () => {
           <div style={{ display: "flex", flexWrap: "wrap" }}>
             {chunkArray(services2, 5).map((chunk, index) => (
               <ul
-                className="md:min-w-[30%] w-[22%] md:w-auto "
+                className="md:min-w-[30%]  md:w-auto "
                 key={index}
                 style={{ listStyle: "none", marginRight: "2rem" }}>
                 {chunk.map((service) => (
                   <li
-                    className="md:text-xs text-[7px]  "
+                    className="md:text-xs md:mb-6 mb-2 text-[7px]  "
                     key={service.id}
                     style={{
-                      marginBottom: "1rem",
                       fontFamily: "Hind Madurai",
                     }}>
                     {service.title}
@@ -143,11 +142,11 @@ const Footer = () => {
               <img
                 src={twitter}
                 alt="twitter"
-                className="md:w-[44px] w-[22px]"
+                className="md:w-[44px] w-[45px]"
               />
             </button>
             <button className="transition-transform hover:scale-110">
-              <img src={link} alt="linkedin" className="md:w-[44px] w-[22px]" />
+              <img src={link} alt="linkedin" className="md:w-[44px] w-[45px]" />
             </button>
           </div>
         </div>
