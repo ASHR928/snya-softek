@@ -46,15 +46,15 @@ const Footer = () => {
       <div
         style={{ backgroundImage: `url(${bg})`, backgroundSize: "cover" }}
         className="flex justify-between pt-10 md:pt-20 pr-6 md:pr-20 pl-10 md:pl-20 ">
-        <div className="flex flex-col mt-6 md:mt-8 ">
-          <div className="flex ">
+        <div className="flex flex-col  mt-6 md:mt-8 ">
+          <div className="flex  ">
             <img
               src={logo2}
               alt="logo2"
-              className="md:w-[60%] w-[30%] md:h-[70%] h-[70%] md:mb-4   md:ml-4"
+              className="md:w-[60%] w-[40%] md:h-[70%]  md:mb-4   md:ml-4"
             />
-            <div className="md:w-[60%] w-[30%] md:h-[70%] h-[50%] ml-4 md:ml-4 mb-2  md:mb-4">
-              <img src={cmi} alt="cmi" className="md:mt-2 mb-4 mt-2 " />
+            <div className="md:w-[60%] w-[40%]  md:h-[70%]  ml-2 md:ml-4 mb-2  md:mb-4">
+              <img src={cmi} alt="cmi" className="md:mt-2  mt-2 " />
             </div>
           </div>
           <div className="md:mb-4 mb-2  md:mt-4 md:ml-4">
@@ -65,18 +65,18 @@ const Footer = () => {
         <div className="md:ml-32  md:mt-10 mt-8 w-[70%] md:w-[50%] ">
           <h1
             style={{ fontFamily: "Montserrat", fontWeight: "600" }}
-            className={`${textStyles.b_heading} text-black md:text-xl  text-xs md:mb-8 mb-4  `}>
+            className={`${textStyles.b_heading} text-black md:text-xl  text-[10px] md:mb-8 mb-4  `}>
             Service
           </h1>
           <div style={{ display: "flex", flexWrap: "wrap" }}>
             {chunkArray(services2, 5).map((chunk, index) => (
               <ul
-                className="md:min-w-[30%] w-[22%]"
+                className="md:min-w-[30%] w-[22%] md:w-auto "
                 key={index}
                 style={{ listStyle: "none", marginRight: "2rem" }}>
                 {chunk.map((service) => (
                   <li
-                    className="md:text-xs text-sm "
+                    className="md:text-xs text-[7px]  "
                     key={service.id}
                     style={{
                       marginBottom: "1rem",
@@ -93,7 +93,7 @@ const Footer = () => {
         <div className=" md:w-[50%] w-[80%] mt-8 md:mt-10">
           <h2
             style={{ fontFamily: "Montserrat", fontWeight: "600" }}
-            className={`${textStyles.b_heading} text-black md:text-xl text-xs mb-4 md:mb-8  `}>
+            className={`${textStyles.b_heading} text-black md:text-xl text-[10px] mb-4 md:mb-8  `}>
             Stay Connected
           </h2>
           <div className="flex flex-col ">
@@ -105,11 +105,11 @@ const Footer = () => {
               />
               <p
                 style={{ fontFamily: "Hind Madurai" }}
-                className="md:ml-4 ml-4 md:text-xs text-sm md:w-[70%]">
+                className="md:ml-4 ml-4 md:text-xs text-[7px] md:w-[70%]">
                 151/16-B, Doon Vihar, Rajpur Road, Jakhan Dehradun - 248001 (UK)
               </p>
             </div>
-            <div className="flex md:mb-4 mb-4 md:text-xs text-sm">
+            <div className="flex md:mb-4 mb-4 md:text-xs text-[7px] ">
               <img
                 src={phone}
                 alt="phone"
@@ -117,7 +117,7 @@ const Footer = () => {
               />
               <span className="md:ml-4 ml-4   ">+91 7454802551</span>
             </div>
-            <div className="flex md:mb-10 mb-8 md:text-xs text-sm">
+            <div className="flex md:mb-10 mb-8 md:text-xs text-[7px] ">
               <img
                 src={mail}
                 alt="mail"
@@ -135,7 +135,7 @@ const Footer = () => {
         <div className="flex flex-col md:ml-6 ml-4 md:mb-2 md-w-[50%] w-[30%] md:mt-10 mt-8 ">
           <h2
             style={{ fontFamily: "Montserrat", fontWeight: "600" }}
-            className={`${textStyles.b_heading} text-black md:text-xl text-xs md:mb-8 mb-4 `}>
+            className={`${textStyles.b_heading} text-black md:text-xl text-[10px] md:mb-8 mb-4 `}>
             Socials
           </h2>
           <div className="flex">
