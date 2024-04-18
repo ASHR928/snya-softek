@@ -42,7 +42,7 @@ function App() {
       </div>
 
       <Testimonials />
-      <div className="md:mt-20 ">
+      <div className="mt-20 ">
         <Footer />
       </div>
     </div>

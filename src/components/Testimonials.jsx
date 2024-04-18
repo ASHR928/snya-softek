@@ -36,8 +36,8 @@ const Testimonials = () => {
           </p>
         </div>
       </div>
-      <div className="relative flex  md:mr-0 mr-[43px] md:ml-20 top-36">
-        <div className="absolute bottom-[70px] left-0">
+      <div className="relative flex  md:mr-0 mr-[30px] md:ml-20 top-36">
+        <div className="absolute md:bottom-0 bottom-[70px] left-0">
           <TestimonialCarousel testimonials={testimonials} />
         </div>
       </div>

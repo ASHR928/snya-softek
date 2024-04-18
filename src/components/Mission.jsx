@@ -47,24 +47,24 @@ const Mission = () => {
               <img
                 src={frame3}
                 alt="frame3"
-                className="max-w-full md:h-[175px] h-[90px] md:mt-0 mt-4 lg:mt-6 lg:mr-2  lg:mb-0"
+                className="md:max-w-full md:h-[175px] h-[80px] md:mt-0 mt-4 lg:mt-6 lg:mr-2  lg:mb-0"
               />
               <img
                 src={frame2}
                 alt="frame2"
-                className="md:max-w-full md:h-[125px] h-[40px] md:mt-0 mt-16 md:pt-0 md:ml-0 ml-2 h-auto lg:mt-20 lg:mb-0"
+                className="md:max-w-full md:h-[125px] h-[80px] md:mt-0 mt-16 md:pt-0 md:ml-0 ml-2 h-auto lg:mt-20 lg:mb-0"
               />
             </div>
             <div className="flex flex-wrap justify-center">
               <img
                 src={frame4}
                 alt="frame4"
-                className="md:max-w-full h-auto md:h-[125px] h-[40px] md:mt-0 mt-2 md:mr-0 mr-2 lg:mt-2  lg:mr-2   lg:mb-0"
+                className="md:max-w-full h-auto md:h-[125px] h-[60px] md:mt-0 mt-2 md:mr-0 mr-2 lg:mt-2  lg:mr-2   lg:mb-0"
               />
               <img
                 src={frame1}
                 alt="frame1"
-                className="md:max-w-full h-auto md:h-[200px] h-[40px] md:mt-0 mt-2 lg:mt-2 mb-4 lg:mb-0"
+                className="md:max-w-full h-auto md:h-[200px] h-[60px] md:mt-0 mt-2 lg:mt-2 mb-4 lg:mb-0"
               />
             </div>
           </div>
