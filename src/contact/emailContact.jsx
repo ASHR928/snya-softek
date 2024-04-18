@@ -35,11 +35,11 @@ const emailContact = () => {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="Enter your email"
-          className="border border-gray-300 md:text-xl text-[9px] md:rounded-l-xl rounded-l-xl px-4 py-2 md:w-[80%] md:h-[70px] w-[62%] h-[20px]  focus:outline-none focus:border-blue-500 sm:h-12"
+          className="border border-gray-300 md:text-xl text-[9px] md:rounded-l-xl rounded-l-xl px-4 py-2 md:w-[80%] md:h-[70px] w-[60%] h-[20px]  focus:outline-none focus:border-blue-500 sm:h-12"
         />
         <button
           type="submit"
-          className="bg-gradient-to-r text-white md:text-xl text-xxs font-bold md:w-[35%] w-[30%] md:h-[70px] h-[20px] rounded-r-xl    mdpx-4 md:py-2 focus:outline-none sm:h-12"
+          className="bg-gradient-to-r text-white md:text-xl text-xxs font-bold md:w-[35%] w-[25%] md:h-[70px] h-[20px] rounded-r-xl    mdpx-4 md:py-2 focus:outline-none sm:h-12"
           style={{
             background:
               "linear-gradient(180deg, #25A0FB 0%, #0886E3 0.01%, #68BFFF 72.4%, #B3DEFD 100%)",
