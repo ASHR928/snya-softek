@@ -35,7 +35,7 @@ const Footer = () => {
             style={{
               fontFamily: "Hind Madurai",
             }}
-            className={`${textStyles.b_para} md:pl-8 md:tracking-widest md:pb-0 pb-4 tracking-wide pl-4 font-bold md:text-sm text-[7px] md:w-[90%] w-[100%] text-white`}>
+            className={`${textStyles.b_para} md:pl-8 md:tracking-widest md:pb-0 pb-4 tracking-wide pl-4 font-bold md:text-sm text-[6px] md:w-[90%] w-[100%] text-white`}>
             Fuelled with inspiration and armed with strategic insights, let's
             embark on the journey of progress together. It's time to roll up our
             sleeves{" "}

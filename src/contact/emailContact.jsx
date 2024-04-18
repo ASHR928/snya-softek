@@ -35,7 +35,7 @@ const emailContact = () => {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="Enter your email"
-          className="border border-gray-300 md:text-xl text-[9px] rounded-l-xl px-4 py-2 md:w-[80%] md:h-[70px] w-[62%] h-[20px]  focus:outline-none focus:border-blue-500 sm:h-12"
+          className="border border-gray-300 md:text-xl text-[9px] md:rounded-l-xl rounded-l-xl px-4 py-2 md:w-[80%] md:h-[70px] w-[62%] h-[20px]  focus:outline-none focus:border-blue-500 sm:h-12"
         />
         <button
           type="submit"

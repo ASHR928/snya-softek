@@ -72,10 +72,8 @@ const CardCarousel = () => {
             <p
               style={{
                 fontFamily: "Hind Madurai",
-
-                letterSpacing: "2.8px",
               }}
-              className={`${textStyles.b_para} md:w-[80%] w-[98%] md:ml-20 ml-2 pb-10 text-[5px] mt-2 md:mr-20 mr-2 md:text-xs  md:mt-2 md:mb-20 md:pb-4 justify-center text-center items-center`}>
+              className={`${textStyles.b_para} md:tracking-[2.8px] tracking-[1.4px] md:w-[80%] w-[98%] md:ml-20  pb-10 text-[5px] mt-2 md:mr-20 ml-2 mr-4 md:text-xs  md:mt-2 md:mb-20 md:pb-4 justify-center text-center items-center`}>
               {project.content}
             </p>
           </div>
