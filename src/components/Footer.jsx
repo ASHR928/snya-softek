@@ -15,7 +15,7 @@ const Footer = () => {
   return (
     <section className="relative" id="footer">
       <div className="md:p-20 p-20 ">
-        <div className=" absolute black-shadow justify-center flex-col md:top-[90px] top-[120px]  md:w-[50%] w-[64%] end-0 rounded-l-3xl h-[12%]  md:h-[25%] bg-tbg">
+        <div className=" absolute black-shadow justify-center flex-col md:top-[90px] top-[120px]  md:w-[50%] w-[64%] end-0 rounded-l-3xl h-[13%]  md:h-[25%] bg-tbg">
           <h3
             style={{
               letterSpacing: "0.4rem",
