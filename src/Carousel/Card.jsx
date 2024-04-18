@@ -7,7 +7,7 @@ const Card = ({ title, logo }) => {
   return (
     <div
       style={{ backgroundImage: `url(${cardbg})` }}
-      className="md:rounded-2xl rounded-xl flex md:h-[120px] h-[70%] md:w-[98%] w-[98%]  shadow-lg p-4 md:p-4 flex-col justify-center items-center">
+      className="md:rounded-2xl rounded-l flex md:h-[120px] h-[45px] md:w-[98%] w-[92%]  shadow-lg md:pl-0 pl-2 md:pb-0 pb-[2px] md:p-4 flex-col justify-center items-center">
       <div className="flex items-center border-b border-gray-600 ">
         <img
           src={logo1}
@@ -16,12 +16,16 @@ const Card = ({ title, logo }) => {
         />
         <div className="flex items-center">
           <h2
-            className={`${textStyles.bl_heading} md:text-base text-xxs md:W-[40%]    text-cdcolor m-2 font-semibold ml-4`}>
+            className={`${textStyles.bl_heading} md:text-base text-[3px] md:W-[70%] w-[40%] ml-2   text-cdcolor md:m-2 font-semibold md:ml-4`}>
             {title}
           </h2>
         </div>
-        <div className="ml-5 flex justify-center items-center">
-          <img src={logo} alt="logo" className="md:w-[80px] w-[40px]" />
+        <div className="md:ml-5 ml-[2px] flex justify-center items-center">
+          <img
+            src={logo}
+            alt="logo"
+            className="md:w-[80px] w-[25px] md:mr-0 mr-[3px]"
+          />
         </div>
       </div>
     </div>

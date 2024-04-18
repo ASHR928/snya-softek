@@ -35,11 +35,11 @@ const Slider = () => {
           </div>
         ))}
       </div>
-      <div className="flex  pr-4 justify-center items-center gap-5  flex-shrink-0 absolute bottom-4 left-1/2 transform -translate-x-1/2">
+      <div className="flex  md:pr-4 justify-center items-center md:gap-5 gap-2  flex-shrink-0 absolute bottom-4 left-1/2 transform -translate-x-1/2">
         {cards.map((_, index) => (
           <button
             key={index}
-            className={`w-4 h-4 rounded-full bg-gray-400 ${
+            className={`md:w-4 md:h-4 w-2 h-2 rounded-full bg-gray-400 ${
               index === currentSlide ? "bg-slcolor" : ""
             }`}
             onClick={() => goToSlide(index)}
