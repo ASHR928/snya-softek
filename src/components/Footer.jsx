@@ -15,7 +15,7 @@ const Footer = () => {
   return (
     <section className="relative" id="footer">
       <div className="md:p-20 p-20 ">
-        <div className=" absolute black-shadow justify-center flex-col md:top-[90px] top-[120px]  md:w-[50%] w-[52%] end-0 rounded-l-3xl h-[12%]  md:h-[25%] bg-tbg">
+        <div className=" absolute black-shadow justify-center flex-col md:top-[90px] top-[120px]  md:w-[50%] w-[64%] end-0 rounded-l-3xl h-[12%]  md:h-[25%] bg-tbg">
           <h3
             style={{
               letterSpacing: "0.4rem",
@@ -26,17 +26,16 @@ const Footer = () => {
           </h3>
           <h1
             style={{
-              letterSpacing: "0.4rem",
               fontWeight: "700",
             }}
-            className={`${textStyles.b_heading} md:pl-8 md:text-2xl text-sm pl-4  font-bold  text-white`}>
+            className={`${textStyles.b_heading} md:pl-8 md:tracking-[6px] tracking-[4px] md:text-2xl text-sm pl-4  font-bold  text-white`}>
             Let’s Get Back To Work
           </h1>
           <p
             style={{
               fontFamily: "Hind Madurai",
             }}
-            className={`${textStyles.b_para} md:pl-8 md:tracking-widest tracking-wide pl-4 font-bold md:text-sm text-xxs md:w-[90%] w-[100%] text-white`}>
+            className={`${textStyles.b_para} md:pl-8 md:tracking-widest md:pb-0 pb-4 tracking-wide pl-4 font-bold md:text-sm text-[8px] md:w-[90%] w-[100%] text-white`}>
             Fuelled with inspiration and armed with strategic insights, let's
             embark on the journey of progress together. It's time to roll up our
             sleeves{" "}
