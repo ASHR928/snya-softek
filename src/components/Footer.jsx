@@ -57,7 +57,7 @@ const Footer = () => {
               <img src={cmi} alt="cmi" className="md:mt-2  mt-2 " />
             </div>
           </div>
-          <div className="md:mb-4 mb-2  md:mt-4 md:ml-4">
+          <div className="md:mb-4 mb-2  md:mt-4 md:ml-10">
             <EmailContact />
           </div>
         </div>
@@ -146,7 +146,13 @@ const Footer = () => {
               />
             </button>
             <button className="transition-transform hover:scale-110">
-              <img src={link} alt="linkedin" className="md:w-[44px] w-[45px]" />
+              <a href="https://www.linkedin.com/company/ascspl/">
+                <img
+                  src={link}
+                  alt="linkedin"
+                  className="md:w-[44px] w-[45px]"
+                />
+              </a>
             </button>
           </div>
         </div>

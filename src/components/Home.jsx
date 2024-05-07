@@ -12,10 +12,20 @@ const Home = () => {
               fontFamily: "Montserrat",
               letterSpacing: "5px",
 
+              fontWeight: "700",
+            }}
+            className="text-tertiary text-xs  sm:text-2xl md:text-2xl  font-bold">
+            ANYA SOFTEK
+          </h3>
+          <h3
+            style={{
+              fontFamily: "Montserrat",
+              letterSpacing: "8px",
+
               fontWeight: "500",
             }}
-            className="text-tertiary text-xs  sm:text-2xl md:text-2xl  font-medium">
-            WE ARE ANYA SOFTEK
+            className="text-tertiary text-xs  sm:text-2xl md:text-xl  font-bold">
+            CONSULTANCY SERVICES [P] Ltd
           </h3>
         </div>
         <div className="mx-auto text-center justify-center items-center max-w-7xl">

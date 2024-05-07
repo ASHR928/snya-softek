@@ -9,7 +9,9 @@ import {
   Services,
 } from "./components";
 import bg from "./assets/home/bg.svg";
+import cbg from "./assets/cbg.svg";
 import PrevWork from "./components/PrevWork";
+import Certifications from "./components/Certifications";
 
 function App() {
   return (
@@ -28,8 +30,13 @@ function App() {
         </div>
       </div>
       <div>
-        <div className={` ${styles.boxWidth} bg-dimBlue`}>
+        <div className={` ${styles.boxWidth}`}>
           <Mission />
+        </div>
+      </div>
+      <div style={{ backgroundImage: `url(${cbg})`, backgroundSize: "cover" }}>
+        <div className={` ${styles.boxWidth} `}>
+          <Certifications />
         </div>
       </div>
 

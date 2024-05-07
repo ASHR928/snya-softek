@@ -14,37 +14,47 @@ const ServicePage = () => {
       <div className="flex flex-col ml-6 mt-6 md:ml-32 md:mr-20 md:mt-4 md:flex-row justify-between">
         <div className=" flex flex-col justify-center text-center relative max-w-3xl">
           <h3
-            className={`${textStyle.g_heading} text-2xl tracking-widest justify-start`}>
+            style={{ fontFamily: "Montserrat" }}
+            className={`${textStyle.g_heading} font-montserrat md:text-2xl sm:text-2xl lg:text-2xl tracking-widest justify-start`}>
             SERVICES
           </h3>
-          <h1
-            className={`${textStyle.b_heading} text-5xl tracking-widest  justify-start`}>
+          <h2
+            style={{ fontFamily: "Montserrat" }}
+            className={`${textStyle.b_heading} font-montserrat md:text-5xl sm:text-4xl lg:text-5xl tracking-widest  justify-start`}>
             What We Do
-          </h1>
+          </h2>
           <div className="h-auto max-w-2xl  text-center flex justify-center mt-4">
-            <p className="font-poppins font-normal text-left md:text-left  text-l px-2 md:px-0">
+            <p
+              style={{ fontFamily: "Mulish" }}
+              className="font-poppins font-normal text-left md:text-left  text-l px-2 md:px-0">
               At ASCSPL, we propel businesses towards success with our strategic
               expertise, cutting-edge solutions, offered services and an
               unwavering commitment to excellence.
             </p>
           </div>
           <div className="flex justify-center text-center md:w-[90%] relative  ">
-            <div className="flex flex-wrap justify-center mt-4 mr-4 max-w-7xl  md:justify-between">
+            <div className="flex flex-wrap   transition-all duration-500 group hover:flipper justify-center mt-4 mr-4 max-w-7xl  group-hover:[transform:rotateY(180deg)]  md:justify-between flip-container">
               {services2.slice(0, 4).map((service) => (
                 <div
                   key={service.id}
-                  className="flex flex-col w-[50%]   md:w-[50%] mt-6 transition-transform hover:scale-110 cursor-pointer   md:px-0">
-                  <img
-                    src={service.icon}
-                    alt={service.title}
-                    className="w-[33px] h-[33px]"
-                  />
-                  <h3 className="mt-2 md:w-[80%] w-[80%] border-b border-gray-600 text-black font-montserrat text-lg md:text-xl text-left md:text-left">
-                    {service.title}
-                  </h3>
-                  <p className="mt-2  text-black w-[98%] font-poppins text-left  text-xs md:text-xs font-normal leading-normal tracking-wide">
-                    {service.content}
-                  </p>
+                  className="flex flex-col w-[50%] border-2 filpper relative  md:w-[50%] mt-6  cursor-pointer   md:px-0">
+                  <div className="flipper">
+                    <div className="front">
+                      <img
+                        src={service.icon}
+                        alt={service.title}
+                        className="w-[33px] h-[33px]"
+                      />
+                      <h3 className="mt-2 md:w-[80%] w-[80%] border-b border-gray-600 text-black font-montserrat text-lg md:text-xl text-left md:text-left">
+                        {service.title}
+                      </h3>
+                    </div>
+                    <div className="back">
+                      <p className="mt-2  text-black w-[98%] font-poppins text-left  text-xs md:text-xs font-normal leading-normal tracking-wide">
+                        {service.content}
+                      </p>
+                    </div>
+                  </div>
                 </div>
               ))}
             </div>

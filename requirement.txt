@@ -1,0 +1,18 @@
+expenditure 
+fiem name
+bill number
+bill amount 
+tax 
+net payable
+checque no
+cheque date 
+acc no -firm 
+ifsc code -firm
+
+interst 
+
+recieved interest 
+deposit interset 
+
+chalan module 
+chalan upload 

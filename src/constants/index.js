@@ -36,21 +36,23 @@ export const navLinks = [
     title: "Home",
   },
   {
-    id: "projects",
-    title: "Projects",
+    id: "mission",
+    title: "Mission",
   },
   {
     id: "services",
     title: "Services",
   },
   {
+    id: "projects",
+    title: "Projects",
+  },
+
+  {
     id: "testimonials",
     title: "Testimonials",
   },
-  {
-    id: "mission",
-    title: "Mission",
-  },
+
   {
     id: "footer",
     title: "Contact Us",
@@ -260,7 +262,7 @@ export const testimonials = [
   {
     quote:
       "Anya Softek's expertise in web development is unparalleled. Their team delivered a sleek and functional website that truly captured our brand essence. Exceptional service and attention to detail.",
-    name: "Sawan Kapoor",
+    name: "Rahul Kumar",
     title: "Web Design",
   },
   {
