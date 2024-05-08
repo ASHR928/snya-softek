@@ -60,11 +60,10 @@ const Footer = () => {
               <img src={cmi} alt="cmi" className="md:mt-2  mt-2 " />
             </div>
           </div>
-          <RevealFromLeft>
-            <div className="md:mb-4 mb-2  md:mt-4 md:ml-10">
-              <EmailContact />
-            </div>
-          </RevealFromLeft>
+
+          <div className="md:mb-4 mb-2  md:mt-4 md:ml-10">
+            <EmailContact />
+          </div>
         </div>
 
         <div className="md:ml-32  md:mt-10 mt-8 w-[70%] md:w-[50%] ">

@@ -19,32 +19,27 @@ const ServicePage = () => {
       className="flex justify-center text-center relative flex-col md:mb-32">
       <div className="flex flex-col md:mb-10 ml-6 mt-6 md:ml-32 md:mr-20 md:mt-4 md:flex-row justify-between">
         <div className=" flex flex-col justify-center text-center relative max-w-3xl">
-          <RevealFromLeft>
-            <h3
-              style={{ fontFamily: "Montserrat" }}
-              className={`${textStyle.g_heading} font-montserrat md:text-2xl sm:text-2xl lg:text-2xl tracking-widest justify-start`}>
-              SERVICES
-            </h3>
-          </RevealFromLeft>
-          <RevealFromLeft>
-            <h2
-              style={{ fontFamily: "Montserrat" }}
-              className={`${textStyle.b_heading} font-montserrat md:text-5xl sm:text-4xl lg:text-5xl tracking-widest  justify-start`}>
-              What We Do
-            </h2>
-          </RevealFromLeft>
+          <h3
+            style={{ fontFamily: "Montserrat" }}
+            className={`${textStyle.g_heading} font-montserrat md:text-2xl sm:text-2xl lg:text-2xl tracking-widest justify-start`}>
+            SERVICES
+          </h3>
+
+          <h2
+            style={{ fontFamily: "Montserrat" }}
+            className={`${textStyle.b_heading} font-montserrat md:text-5xl sm:text-4xl lg:text-5xl tracking-widest  justify-start`}>
+            What We Do
+          </h2>
 
           <div className="h-auto max-w-2xl  text-center flex justify-center mt-4">
-            <RevealFromLeft>
-              {" "}
-              <p
-                style={{ fontFamily: "Mulish" }}
-                className="font-poppins font-normal text-left md:text-left  text-l px-2 md:px-0">
-                At ASCSPL, we propel businesses towards success with our
-                strategic expertise, cutting-edge solutions, offered services
-                and an unwavering commitment to excellence.
-              </p>
-            </RevealFromLeft>
+            {" "}
+            <p
+              style={{ fontFamily: "Mulish" }}
+              className="font-poppins font-normal text-left md:text-left  text-l px-2 md:px-0">
+              At ASCSPL, we propel businesses towards success with our strategic
+              expertise, cutting-edge solutions, offered services and an
+              unwavering commitment to excellence.
+            </p>
           </div>
 
           <div className="flex md:mt-10">
