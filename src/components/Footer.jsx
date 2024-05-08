@@ -11,6 +11,8 @@ import mail from "../assets/mail.svg";
 import { chunkArray } from "../utils/chunkArray";
 import { services2 } from "../constants";
 import bg from "../assets/home/bg.svg";
+import RevealRight from "../Animation/RevealRight";
+import RevealFromLeft from "../Animation/RevealFromLeft";
 const Footer = () => {
   return (
     <section className="relative" id="footer">
@@ -24,6 +26,7 @@ const Footer = () => {
             className={`${textStyles.b_heading} md:pl-8 pl-4 pt-2 md:pt-4 md:text-base text-xxs  text-white`}>
             WE ARE HERE FOR YOU
           </h3>
+
           <h1
             style={{
               fontWeight: "700",
@@ -57,9 +60,11 @@ const Footer = () => {
               <img src={cmi} alt="cmi" className="md:mt-2  mt-2 " />
             </div>
           </div>
-          <div className="md:mb-4 mb-2  md:mt-4 md:ml-10">
-            <EmailContact />
-          </div>
+          <RevealFromLeft>
+            <div className="md:mb-4 mb-2  md:mt-4 md:ml-10">
+              <EmailContact />
+            </div>
+          </RevealFromLeft>
         </div>
 
         <div className="md:ml-32  md:mt-10 mt-8 w-[70%] md:w-[50%] ">

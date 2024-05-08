@@ -6,29 +6,31 @@ import frame3 from "../assets/frame3.svg";
 import frame4 from "../assets/frame4.svg";
 import Reveal from "../Animation/Reveal";
 import { CardBody, CardContainer, CardItem } from "../Animation/3dCard";
+import RevealFromLeft from "../Animation/RevealFromLeft";
+import RevealRight from "../Animation/RevealRight";
 
 const Mission = () => {
   return (
     <section className="flex justify-start text-center relative" id="mission">
       <div className="relative  md:flex  ">
         <div className="md:ml-32 ml-4 mt-6 md:mt-32 flex flex-col justify-start text-center md:mb-40 relative">
-          <Reveal>
+          <RevealFromLeft>
             <h3
               style={{ fontFamily: "Montserrat", letterSpacing: "0.5rem" }}
               className="flex justify-center md:justify-start font-montserrat font-normal text-tcolor md:pr-8 text-sm md:text-xl">
               ABOUT US
             </h3>
-          </Reveal>
-          <Reveal>
+          </RevealFromLeft>
+          <RevealFromLeft>
             <h2
               style={{ fontFamily: "Montserrat", letterSpacing: "0.5rem" }}
               className="md:mt-0 flex justify-center md:justify-start mb-4 font-montserrat font-normal md:text-black sm:pr-2 sm:text-2xl md:pr-8 md:text-5xl">
               Our Mission
             </h2>
-          </Reveal>
+          </RevealFromLeft>
 
           <div className="max-w-l text-center md:text-left flex justify-center md:justify-start md:mt-6">
-            <Reveal>
+            <RevealFromLeft>
               <p
                 style={{
                   fontFamily: "Hind Madurai",
@@ -46,13 +48,13 @@ const Mission = () => {
                 are committed to delivering solutions that not only meet but
                 exceed your expectations.
               </p>
-            </Reveal>
+            </RevealFromLeft>
           </div>
         </div>
 
         <CardContainer className="max-w-xl mx-auto md:ml-20 md:pl-8">
           <CardBody className="max-w-4xl group/card mx-auto md:mt-32 px-4 lg:ml-12 lg:px-0 flex flex-col relative z-10">
-            <Reveal translateZ="100">
+            <RevealRight>
               <CardItem
                 translateZ="100"
                 className="flex flex-wrap justify-center">
@@ -75,8 +77,8 @@ const Mission = () => {
                   className="md:max-w-full md:h-[125px] h-[80px] md:mt-0 mt-16 md:pt-0 md:ml-0 ml-2 h-auto lg:mt-20 lg:mb-0"
                 />
               </CardItem>
-            </Reveal>
-            <Reveal>
+            </RevealRight>
+            <RevealFromLeft>
               <CardItem className="flex flex-wrap justify-center">
                 <img
                   style={{
@@ -97,7 +99,7 @@ const Mission = () => {
                   className="md:max-w-full h-auto md:h-[200px] h-[60px] md:mt-0 mt-2 lg:mt-2 mb-4 lg:mb-0"
                 />
               </CardItem>
-            </Reveal>
+            </RevealFromLeft>
           </CardBody>
 
           <Circle

@@ -5,6 +5,8 @@ import cmi2 from "../assets/cmi2.svg";
 import iso from "../assets/iso.svg";
 import msme from "../assets/msme.svg";
 import Reveal from "../Animation/Reveal";
+import RevealFromLeft from "../Animation/RevealFromLeft";
+import RevealRight from "../Animation/RevealRight";
 
 const Certifications = () => {
   return (
@@ -26,7 +28,7 @@ const Certifications = () => {
         </Reveal>
       </div>
       <div className="flex md:ml-[110px] md:pb-10">
-        <Reveal>
+        <RevealRight>
           <CardContainer className=" flex flex-start border-black">
             <CardBody className="  cardbg   group/card shadow-xl md:w-[350px] justify-center items-center text-center  md:rounded-xl md:pt-[34px] md:pb-[40px] md:pr-[70px] md:pl-[70px] bg-white">
               <CardItem translateZ="100">
@@ -34,7 +36,7 @@ const Certifications = () => {
               </CardItem>
             </CardBody>
           </CardContainer>
-        </Reveal>
+        </RevealRight>
 
         <Reveal>
           <CardContainer className=" flex flex-start border-black">
@@ -51,7 +53,7 @@ const Certifications = () => {
             </CardBody>
           </CardContainer>
         </Reveal>
-        <Reveal>
+        <RevealFromLeft>
           <CardContainer className=" flex flex-start border-black">
             <CardBody className="    group/card cardbg rounded-xl md:ml-10 md:w-[350px] shadow-xl md:pt-[60px] md:pb-[60px]  md:pr-[40px] md:pl-[40px]">
               <CardItem translateZ="100">
@@ -59,7 +61,7 @@ const Certifications = () => {
               </CardItem>
             </CardBody>
           </CardContainer>
-        </Reveal>
+        </RevealFromLeft>
       </div>
     </section>
   );
