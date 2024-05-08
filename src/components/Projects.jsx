@@ -1,3 +1,4 @@
+// import React, { memo } from "react";
 import textStyle from "../textstyles/textstyle";
 import CardCarousel from "../Carousel/CardCarousel";
 import AOS from "aos";
@@ -22,15 +23,17 @@ const Projects = () => {
         >
           Past Triumphs, Future Innovations
         </h3>
+
         <h1
           style={{ letterSpacing: "0.4rem" }}
           className={`${textStyle.b_heading} mt-2 md:mt-4 tracking-widest text-3xl md:text-5xl`}
         >
           OUR STORIED JOURNEY AT ANYA SOFTEK
         </h1>
+
         <p
           style={{ letterSpacing: "0.3rem" }}
-          className={`${textStyle.b_para} w-full md:w-[80%] tracking-widest mt-4 md:mt-8 text-sm md:text-base leading-normal`}
+          className={`${textStyle.b_para} w-full md:w-[80%] tracking-widest mt-4 md:mt-8 mx-auto text-sm md:text-base leading-normal`}
         >
           Step into the legacy of success with ASCPL as we proudly showcase our
           past projects. Each venture is a testament to our commitment to

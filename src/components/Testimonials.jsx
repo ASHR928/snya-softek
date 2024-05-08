@@ -28,6 +28,7 @@ const Testimonials = () => {
           >
             TESTIMONIALS
           </h3>
+
           <h2
             style={{
               letterSpacing: "11.61px",
@@ -38,13 +39,14 @@ const Testimonials = () => {
           >
             What People Say
           </h2>
+
           <p
             style={{
               fontWeight: "400",
               fontFamily: "Hind Madurai",
               letterSpacing: "0.21px",
             }}
-            className={`${textStyles.b_para} md:w-[40%] w-[60%] md:pt-4 pt-2 pb-10 mb-20 md:pb-32 md:mb-40  md:text-base text-[10px] text-white justify-center items-center text-center  font-normal`}
+            className={`${textStyles.b_para} md:w-[40%] w-[60%] md:pt-4 pt-2 pb-10 mb-20 md:pb-32 md:mb-40  md:text-base text-[10px] text-white justify-center items-center text-center  font-normal mx-auto`}
           >
             Explore the voices of satisfaction. Our clients speak through 5
             million reviews, sharing stories of success and partnership.
