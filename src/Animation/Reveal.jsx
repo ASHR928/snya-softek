@@ -1,5 +1,6 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
+import PropTypes from "prop-types";
 
 const Reveal = ({ children, width = "fit-content" }) => {
   const ref = useRef(null);
@@ -27,11 +28,17 @@ const Reveal = ({ children, width = "fit-content" }) => {
         }}
         initial="hidden"
         animate={mainControls}
-        transition={{ duration: 0.5, delay: 0.4 }}>
+        transition={{ duration: 0.5, delay: 0.4 }}
+      >
         {children}
       </motion.div>
     </div>
   );
+};
+
+Reveal.propTypes = {
+  children: PropTypes.node.isRequired,
+  width: PropTypes.string,
 };
 
 export default Reveal;

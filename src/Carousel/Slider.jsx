@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import Card from "./Card";
 import { cards } from "../constants";
-import textStyles from "../textstyles/textstyle";
 
 const Slider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);

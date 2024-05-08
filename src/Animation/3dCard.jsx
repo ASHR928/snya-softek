@@ -2,13 +2,7 @@
 
 import { cn } from "../utils/cn";
 
-import React, {
-  createContext,
-  useState,
-  useContext,
-  useRef,
-  useEffect,
-} from "react";
+import { createContext, useState, useContext, useRef, useEffect } from "react";
 
 const MouseEnterContext = createContext(undefined);
 
@@ -41,7 +35,8 @@ export const CardContainer = ({ children, className, containerClassName }) => {
         className={cn("py-10 flex cursor-pointer", containerClassName)}
         style={{
           perspective: "1000px",
-        }}>
+        }}
+      >
         <div
           ref={containerRef}
           onMouseEnter={handleMouseEnter}
@@ -53,7 +48,8 @@ export const CardContainer = ({ children, className, containerClassName }) => {
           )}
           style={{
             transformStyle: "preserve-3d",
-          }}>
+          }}
+        >
           {children}
         </div>
       </div>
@@ -67,7 +63,8 @@ export const CardBody = ({ children, className }) => {
       className={cn(
         "h-50 w-50 [transform-style:preserve-3d]  [&>*]:[transform-style:preserve-3d]",
         className
-      )}>
+      )}
+    >
       {children}
     </div>
   );
@@ -105,7 +102,8 @@ export const CardItem = ({
     <Tag
       ref={ref}
       className={cn("w-fit transition duration-200 ease-linear", className)}
-      {...rest}>
+      {...rest}
+    >
       {children}
     </Tag>
   );
