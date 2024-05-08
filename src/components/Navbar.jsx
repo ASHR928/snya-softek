@@ -6,6 +6,7 @@ import cmi from "../assets/home/cmi.svg";
 import menu from "../assets/home/menu.svg";
 import cross from "../assets/home/cross.svg";
 import { useState, useEffect } from "react";
+import Reveal from "../Animation/Reveal";
 
 const Navbar = () => {
   const [active, setActive] = useState("Home");
@@ -29,40 +30,46 @@ const Navbar = () => {
       className={`w-full px-4 py-2 flex z-50 fixed justify-between items-center navbar ${
         isScrolled ? "bg-white shadow-md" : ""
       }`}>
-      <div className="flex justify-start ">
-        <img
-          src={logo}
-          alt="logo"
-          className="w-auto h-12  sm:ml-10 md:mt-2     md:ml-8 md:pl-20"
-        />
-      </div>
+      <Reveal>
+        <div className="flex justify-start ">
+          <img
+            src={logo}
+            alt="logo"
+            className="w-auto h-12  sm:ml-10 md:mt-2     md:ml-8 md:pl-20"
+          />
+        </div>
+      </Reveal>
 
       <div className="hidden sm:flex justify-center flex-1">
-        <ul className="list-none flex space-x-14">
-          {navLinks.map((nav) => (
-            <li
-              key={nav.id}
-              className="font-montserrat text-xl text-black hover:scale-110">
-              <a href={`#${nav.id}`}>{nav.title}</a>
-            </li>
-          ))}
-        </ul>
+        <Reveal>
+          <ul className="list-none flex space-x-14">
+            {navLinks.map((nav) => (
+              <li
+                key={nav.id}
+                className="font-montserrat text-xl text-black hover:scale-110">
+                <a href={`#${nav.id}`}>{nav.title}</a>
+              </li>
+            ))}
+          </ul>
+        </Reveal>
       </div>
 
       <div className="flex justify-end items-center">
-        <img
-          src={cmi}
-          alt="cmi"
-          className="w-auto h-12 pr-10 md:mr-6
+        <Reveal>
+          <img
+            src={cmi}
+            alt="cmi"
+            className="w-auto h-12 pr-10 md:mr-6
            hidden md:block"
-        />
+          />
 
-        <img
-          src={toggle ? cross : menu}
-          alt="menu"
-          className="w-8 h-8 ml-2 md:hidden"
-          onClick={() => setToggle((prev) => !prev)}
-        />
+          <img
+            src={toggle ? cross : menu}
+            alt="menu"
+            className="w-8 h-8 ml-2 md:hidden"
+            onClick={() => setToggle((prev) => !prev)}
+          />
+        </Reveal>
       </div>
 
       {toggle && (

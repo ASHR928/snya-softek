@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { services2 } from "../constants";
 import img1 from "../assets/services1/img1.svg";
 import img2 from "../assets/services1/img2.svg";
+import { motion } from "framer-motion";
 import textStyle from "../textstyles/textstyle";
 import styles from "../style";
 
 const ServicePage = () => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <section
       id="services"
@@ -32,69 +34,77 @@ const ServicePage = () => {
               unwavering commitment to excellence.
             </p>
           </div>
-          <div className="flex justify-center text-center md:w-[90%] relative  ">
-            <div className="flex flex-wrap   transition-all duration-500 group hover:flipper justify-center mt-4 mr-4 max-w-7xl  group-hover:[transform:rotateY(180deg)]  md:justify-between flip-container">
+          <div className="flex md:mt-10">
+            <motion.div className="flex  justify-center mr-4  ">
               {services2.slice(0, 4).map((service) => (
-                <div
-                  key={service.id}
-                  className="flex flex-col w-[50%] border-2 filpper relative  md:w-[50%] mt-6  cursor-pointer   md:px-0">
-                  <div className="flipper">
-                    <div className="front">
-                      <img
-                        src={service.icon}
-                        alt={service.title}
-                        className="w-[33px] h-[33px]"
-                      />
-                      <h3 className="mt-2 md:w-[80%] w-[80%] border-b border-gray-600 text-black font-montserrat text-lg md:text-xl text-left md:text-left">
-                        {service.title}
-                      </h3>
-                    </div>
-                    <div className="back">
-                      <p className="mt-2  text-black w-[98%] font-poppins text-left  text-xs md:text-xs font-normal leading-normal tracking-wide">
+                <motion.div
+                  style={{
+                    borderRadius: "1rem",
+                    border: " 1px solid #0871BE ",
+                  }}
+                  onClick={() => setIsOpen(!isOpen)}
+                  layout
+                  transition={{ layout: { duration: 0.6, type: "spring" } }}
+                  className="flex shadow-lg cursor-pointer justify-center md:w-[240px] md:pt-[1rem] items-center md:pb-4 text-center flex-col md:w-[80%] w-[50%] md:mr-12 md:pl-[1rem] md:pr-[1rem] border-2">
+                  <motion.img
+                    layout
+                    src={service.icon}
+                    alt={service.title}
+                    className="md:w-[50px]  md:h-[50px]"
+                  />
+                  <h3
+                    layout
+                    className="   md:w-[100px] w-[80%] border-b border-gray-600 text-black font-Montserrat text-lg md:text-xl">
+                    {service.title}
+                  </h3>
+                  {isOpen && (
+                    <motion.div>
+                      <p className="mt-2  text-black md:w-[220px]  font-Mulish text-left md:text-left text-xs md:text-xs font-normal leading-normal tracking-wide">
                         {service.content}
                       </p>
-                    </div>
-                  </div>
-                </div>
+                    </motion.div>
+                  )}
+                </motion.div>
               ))}
-            </div>
+            </motion.div>
           </div>
-        </div>
-        <div className="">
-          <img
-            src={img2}
-            alt="img2"
-            className=" md:block md:w-[100%] mt-4 md:mt-20 mb-4"
-          />
         </div>
       </div>
 
       {/* Right Section */}
-      <div className="md:flex ml-6 md:ml-32 md:mr-10 mb-4">
-        <div>
-          <img src={img1} alt="img1" className="   md:w-100%" />
-        </div>
-        <div className="flex justify-center text-center md:w-[90%] relative md:ml-20">
-          <div className="flex flex-wrap justify-center mr-4 max-w-7xl  md:justify-between">
-            {services2.slice(4).map((service) => (
-              <div
-                key={service.id}
-                className="flex flex-col md:w-[50%] w-[50%]  mt-6 transition-transform hover:scale-110 cursor-pointer   md:px-0">
-                <img
-                  src={service.icon}
-                  alt={service.title}
-                  className="w-[33px] h-[33px]"
-                />
-                <h3 className="mt-2 md:w-[80%] w-[80%] border-b border-gray-600 text-black font-montserrat text-lg md:text-xl text-left md:text-left">
-                  {service.title}
-                </h3>
-                <p className="mt-2  text-black w-[98%]  font-poppins text-left md:text-left text-xs md:text-xs font-normal leading-normal tracking-wide">
-                  {service.content}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
+      <div className="flex md:mt-10 md:ml-32">
+        <motion.div className="flex  justify-center mr-4  ">
+          {services2.slice(4).map((service) => (
+            <motion.div
+              style={{
+                borderRadius: "1rem",
+                border: " 1px solid #0871BE ",
+              }}
+              onClick={() => setIsOpen(!isOpen)}
+              layout
+              transition={{ layout: { duration: 0.6, type: "spring" } }}
+              className="flex shadow-lg cursor-pointer justify-center md:w-[240px] md:pt-[1rem] items-center md:pb-4 text-center flex-col md:w-[80%] w-[50%] md:mr-12 md:pl-[1rem] md:pr-[1rem] border-2">
+              <motion.img
+                layout
+                src={service.icon}
+                alt={service.title}
+                className="md:w-[50px]  md:h-[50px]"
+              />
+              <h3
+                layout
+                className="   md:w-[180px] w-[80%] border-b border-gray-600 text-black font-Montserrat text-lg md:text-xl">
+                {service.title}
+              </h3>
+              {isOpen && (
+                <motion.div>
+                  <p className="mt-2  text-black md:w-[220px]  font-Mulish text-left md:text-left text-xs md:text-xs font-normal leading-normal tracking-wide">
+                    {service.content}
+                  </p>
+                </motion.div>
+              )}
+            </motion.div>
+          ))}
+        </motion.div>
       </div>
     </section>
   );
