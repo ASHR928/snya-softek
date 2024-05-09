@@ -26,7 +26,7 @@ const Slider = () => {
   };
 
   return (
-    <div className="relative pb-8  overflow-hidden">
+    <div className="relative md:pb-8 overflow-hidden">
       <div className="flex transition-transform md:pb-4 mb-10 md:ml-10 md:pl-10 ml-4 ease-in-out duration-500">
         {visibleCards.map((card, index) => (
           <div key={index} className=" ">
@@ -34,7 +34,7 @@ const Slider = () => {
           </div>
         ))}
       </div>
-      <div className="flex  md:pr-4 justify-center items-center md:gap-5 gap-2  flex-shrink-0 absolute bottom-4 left-1/2 transform -translate-x-1/2">
+      <div className="flex md:pr-4 justify-center items-center md:gap-5 gap-2  flex-shrink-0 absolute bottom-4 left-1/2 transform -translate-x-1/2">
         {cards.map((_, index) => (
           <button
             key={index}

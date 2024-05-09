@@ -14,7 +14,7 @@ const Feedback = ({ quote, title, name }) => {
   }, []);
   return (
     <div
-      className=" rounded flex flex-col md:w-[327px] w-[100px]  ml-[15px]  h-[160px] md:h-[397px] md:ml-10 md:pl:32 cursor-pointer bg-fbg custom-shadow transition-transform hover:scale-110"
+      className=" rounded flex flex-col md:w-[327px] w-[100px] ml-[15px]  h-[160px] md:h-[397px] md:ml-10  cursor-pointer bg-fbg custom-shadow transition-transform hover:scale-110"
       data-aos="flip-left"
     >
       <div className="flex flex-col justify-center items-center text-center">

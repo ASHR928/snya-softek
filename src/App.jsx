@@ -17,7 +17,8 @@ function App() {
   return (
     <div
       className="
-     w-full overflow-hidden">
+     w-full overflow-hidden"
+    >
       <div style={{ backgroundImage: `url(${bg})`, backgroundSize: "cover" }}>
         <div className={`${styles.boxWidth}`}>
           <Navbar />
@@ -49,7 +50,7 @@ function App() {
       </div>
 
       <Testimonials />
-      <div className="mt-20 ">
+      <div className="mt-10 md:mt-20 ">
         <Footer />
       </div>
     </div>

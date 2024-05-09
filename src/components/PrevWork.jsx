@@ -15,7 +15,7 @@ const PrevWork = () => {
     <section className="flex-col flex ">
       <div className="flex flex-col ml-4 md:ml-32" data-aos="fade-up">
         <h1
-          className={`${textStyles.g_heading} tracking-widest uppercase mb-2 text-lg md:text-xl lg:text-2xl`}
+          className={`${textStyles.g_heading} tracking-wide sm:tracking-widest uppercase mb-2 text-lg md:text-xl lg:text-2xl`}
         >
           Our Esteemed Clients
         </h1>

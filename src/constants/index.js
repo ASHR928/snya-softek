@@ -30,6 +30,8 @@ import {
   pwd,
 } from "../assets/clients";
 
+import { sample } from "../assets/projects";
+
 export const navLinks = [
   {
     id: "home",
@@ -168,6 +170,7 @@ export const projects = [
     title: "eKrishi Mandi Management System",
     content:
       " Our eMandi Solution is a comprehensive  platform designed for agricultural  markets. It digitizes the process of buying  and selling agricultural produce, providing a transparent and efficient solutions for Agriculture Mandi for  generating  entry/exit  gate  pass,  generating 6R, 9R receipts, maintaining  Online Stock register .",
+    image: sample,
   },
   {
     id: "2",
@@ -175,6 +178,7 @@ export const projects = [
     title: " Single Login System",
     content:
       " Single Login System is based on single  window decision support system. This  solution enhances user convenience  and streamline various management features like Automation of Time Table Generation,  Efficiently managing Staff & Students  Information.",
+    image: sample,
   },
   {
     id: "3",
@@ -182,6 +186,7 @@ export const projects = [
     title: "Online examination system  solutions",
     content:
       "  Our Online Examination System  Software simplifies the process of  conducting exams and assessments. It provides a secure and user-friendly  platform for creating, administering,  and grading online exams. This  software supports various question  types, customizable exam settings, robust result analysis.",
+    image: sample,
   },
   {
     id: "4",
@@ -189,6 +194,7 @@ export const projects = [
     title: " GIS Solutions",
     content:
       " Anya Softek offers cutting-edge  Geographic Information System (GIS)  solutions. Our GIS solutions help  organizations visualize, analyze, and  interpret spatial data to make informed  decisions. We have developed customized  GIS applications  like Road Safety App,  Survey App, 3D Modeller, Planning  Calculator.",
+    image: sample,
   },
   {
     id: "5",
@@ -196,6 +202,7 @@ export const projects = [
     title: "Forest Proposal  Management system",
     content:
       " A comprehensive software solution  for managing forest-related  proposals and projects. This  system facilitates the submission,  review, and approval process for  forestry projects, ensuring efficient  project management and  compliance with regulatory  requirements .",
+    image: sample,
   },
   {
     id: "",
@@ -203,6 +210,7 @@ export const projects = [
     title: "Single Nodal Agency",
     content:
       " A comprehensive software solution  for managing forest-related  proposals and projects. This  system facilitates the submission,  review, and approval process for  forestry projects, ensuring efficient  project management and  compliance with regulatory  requirements .",
+    image: sample,
   },
 ];
 export const cards = [

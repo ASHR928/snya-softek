@@ -21,15 +21,17 @@ const Footer = () => {
     });
   }, []);
   return (
-    <section className="relative" id="footer" data-aos="fade-left">
+    <section className="relative" id="footer">
       <div className="md:p-20 p-20 ">
-        <div className=" absolute black-shadow justify-center flex-col md:top-[90px] top-[120px]  md:w-[50%] w-[64%] end-0 rounded-l-3xl h-[13%]  md:h-[25%] bg-tbg">
+        <div
+          className=" absolute black-shadow justify-center flex-col md:top-[90px] top-[120px]  md:w-[50%] w-[64%] end-0 rounded-l-3xl h-[13%]  md:h-[25%] bg-tbg"
+          data-aos="fade-left"
+        >
           <h3
             style={{
-              letterSpacing: "0.4rem",
               fontWeight: "400",
             }}
-            className={`${textStyles.b_heading} md:pl-8 pl-4 pt-2 md:pt-4 md:text-base text-xxs  text-white`}
+            className={`${textStyles.b_heading} tracking-wide md:tracking-widest md:pl-8 pl-4 pt-2 md:pt-4 md:text-base text-xxs  text-white`}
           >
             WE ARE HERE FOR YOU
           </h3>
@@ -38,7 +40,7 @@ const Footer = () => {
             style={{
               fontWeight: "700",
             }}
-            className={`${textStyles.b_heading} md:pl-8 md:tracking-[6px] tracking-[4px] md:text-2xl text-sm pl-4  font-bold  text-white`}
+            className={`${textStyles.b_heading} md:pl-8 md:tracking-widest tracking-[4px] md:text-2xl text-sm pl-4  font-bold  text-white`}
           >
             Let&apos;s Get Back To Work
           </h1>

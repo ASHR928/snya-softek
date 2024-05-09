@@ -2,7 +2,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
-import cardbg from "../assets/clients/cardbg.svg";
 import { EffectCoverflow, Pagination } from "swiper/modules";
 import { Autoplay } from "swiper/modules";
 import { projects } from "../constants";
@@ -20,16 +19,13 @@ const CardCarousel = () => {
 
   return (
     <Swiper
-      style={{
-        width: "100%",
-        paddingTop: "50px",
-        paddingBottom: "50px",
-      }}
       effect={"coverflow"}
       grabCursor={true}
       centeredSlides={true}
       autoplay={{ delay: 2500, disableOnInteraction: false }}
       slidesPerView={"auto"}
+      spaceBetween={0}
+      parallax={false}
       coverflowEffect={{
         rotate: 50,
         stretch: 0,
@@ -37,55 +33,47 @@ const CardCarousel = () => {
         modifier: 1,
         slideShadows: true,
       }}
-      pagination={true}
       modules={[EffectCoverflow, Pagination, Autoplay]}
       className="mySwiper"
       data-aos="zoom-out"
     >
       {projects.map((project) => (
         <SwiperSlide
-          style={{
-            backgroundImage: `url(${cardbg})`,
-            backgroundSize: "cover",
-            borderRadius: "20px",
-          }}
-          className="md:w-50% w-[75%] md:h-[300px] h-[120px]"
+          className="bg-gradient-to-tl from-[#04518A] via-[#4eaaed] to-[#FFFFFF]  opacity-90 shadow-xl rounded-xl md:w-50% w-[75%] "
           key={project.id}
         >
-          <div className="card relative">
-            <div
-              className="mb-52 md:text-9xl text-xl font-bold"
-              style={{
-                position: "absolute",
-                top: "-100px",
-                left: "0",
-                zIndex: "-100",
-                fontFamily: "Montserrat",
-                fontWeight: "400",
-                letterSpacing: "5.4px",
-                color: "rgba(255, 255, 255, 0.75)",
-              }}
-            >
-              {project.Number}
+          <div className="flex flex-row justify-start items-start card ">
+            <div className="flex flex-col items-cente justify-center w-2/5">
+              <img src={project.image} alt="logo" className="w-40 h-40 " />
             </div>
-            <h2
-              style={{
-                fontFamily: "Montserrat",
-                letterSpacing: "5.4px",
-                textAlign: "center",
-              }}
-              className={`${textStyles.bl_heading} text-secondary md:text-3xl text-[8px] mx-auto md:mt-10 mt-4 pt-2 md:pt-6 `}
-            >
-              {project.title}
-            </h2>
-            <p
-              style={{
-                fontFamily: "Hind Madurai",
-              }}
-              className={`${textStyles.b_para} md:tracking-[2.8px] tracking-[1.4px] md:w-[80%] w-[98%] md:ml-20  pb-10 text-[5px] mt-2 md:mr-20 ml-2 mr-4 md:text-xs  md:mt-2 md:mb-20 md:pb-4 justify-center text-center items-center`}
-            >
-              {project.content}
-            </p>
+            <div className="flex flex-col justify-start items-start w-3/5 relative">
+              <h2
+                style={{
+                  fontFamily: "Montserrat",
+                }}
+                className={`${textStyles.bl_heading} text-center  tracking-wide  sm:tracking-widest text-secondary text-base md:text-3xl mx-auto md:mt-10 mt-2 pt-2 md:pt-6 w-[85%] `}
+              >
+                {project.title}
+              </h2>
+              <p
+                style={{
+                  fontFamily: "Hind Madurai",
+                }}
+                className={`${textStyles.b_para} md:tracking-[2.8px] tracking-[1.4px] md:w-[65%] w-[80%] md:ml-20  pb-10 text-xxs mt-2 md:mr-20 ml-2 mr-4 md:text-xs md:mt-2 md:mb-20 md:pb-4 justify-center text-left items-center`}
+              >
+                {project.content}
+              </p>
+              <div
+                className="md:text-8xl text-xl font-semibold absolute right-1 bottom-0"
+                style={{
+                  fontFamily: "Montserrat",
+                  letterSpacing: "5.4px",
+                  color: "rgba(255, 255, 255, 0.75)",
+                }}
+              >
+                {project.Number}
+              </div>
+            </div>
           </div>
         </SwiperSlide>
       ))}

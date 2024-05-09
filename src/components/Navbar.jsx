@@ -1,15 +1,33 @@
 import { navLinks } from "../constants";
-import logo from "../assets/home/logo.svg";
+import logo from "../assets/anya-logo.svg";
 import cmi from "../assets/home/cmi.svg";
 
 import menu from "../assets/home/menu.svg";
 import cross from "../assets/home/cross.svg";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 const Navbar = () => {
   const [active, setActive] = useState("Home");
   const [toggle, setToggle] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+
+  const navbarRef = useRef(null);
+  const navbarButtonRef = useRef(null);
+
+  useEffect(() => {
+    const handleClick = (e) => {
+      if (
+        navbarRef.current &&
+        !navbarRef.current.contains(e.target) &&
+        !navbarButtonRef.current.contains(e.target)
+      ) {
+        setToggle(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClick);
+    return () => document.removeEventListener("mousedown", handleClick);
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -32,7 +50,7 @@ const Navbar = () => {
         <img
           src={logo}
           alt="logo"
-          className="w-auto h-12 sm:ml-10 md:mt-2 md:ml-8 md:pl-20"
+          className="w-auto h-10 sm:h-12 sm:ml-10 md:mt-2 md:ml-8 md:pl-20"
         />
       </div>
 
@@ -62,16 +80,20 @@ const Navbar = () => {
           alt="menu"
           className="w-8 h-8 ml-2 md:hidden"
           onClick={() => setToggle((prev) => !prev)}
+          ref={navbarButtonRef}
         />
       </div>
 
       {toggle && (
-        <div className="sm:hidden absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl bg-blue-gradient">
+        <div
+          className="sm:hidden absolute top-14 right-0 mx-4 my-2 min-w-[140px] rounded-xl bg-tertiary"
+          ref={navbarRef}
+        >
           <ul className="list-none flex flex-col p-4 items-start">
             {navLinks.map((nav, index) => (
               <li
                 key={nav.id}
-                className={`font-poppins  font-medium cursor-pointer text-[16px] ${
+                className={`font-poppins font-medium cursor-pointer text-[16px] border-b border-white w-full ${
                   active === nav.title ? "text-black" : "text-white"
                 }  ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
                 onClick={() => setActive(nav.title)}

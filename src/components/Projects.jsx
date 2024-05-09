@@ -1,9 +1,9 @@
-// import React, { memo } from "react";
 import textStyle from "../textstyles/textstyle";
 import CardCarousel from "../Carousel/CardCarousel";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import projectsBg from "../assets/projects-bg.svg";
 
 const Projects = () => {
   useEffect(() => {
@@ -11,35 +11,40 @@ const Projects = () => {
       duration: 2000,
     });
   }, []);
+
   return (
-    <section id="projects" className="flex justify-center text-center flex-col">
+    <section
+      id="projects"
+      className="mt-4 flex justify-center text-center flex-col bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: `url(${projectsBg})` }}
+    >
       <div
         className="flex justify-center items-center flex-col mx-4 md:mx-8"
         data-aos="fade-right"
       >
-        <h3
+        {/* <h3
           style={{ letterSpacing: "0.5rem" }}
-          className={`${textStyle.g_heading} mt-2 md:mt-4 text-base md:text-xl tracking-widest leading-normal`}
+          className={`${textStyle.g_heading} mt-2 md:mt-4 text-base md:text-xl tracking-wide sm:tracking-widest leading-normal`}
         >
           Past Triumphs, Future Innovations
-        </h3>
+        </h3> */}
 
         <h1
           style={{ letterSpacing: "0.4rem" }}
-          className={`${textStyle.b_heading} mt-2 md:mt-4 tracking-widest text-3xl md:text-5xl`}
+          className={`${textStyle.b_heading} text-white mt-2 md:mt-4 tracking-wide sm:tracking-widest text-3xl md:text-5xl`}
         >
-          OUR STORIED JOURNEY AT ANYA SOFTEK
+          OUR PROJECTS
         </h1>
 
-        <p
+        {/* <p
           style={{ letterSpacing: "0.3rem" }}
-          className={`${textStyle.b_para} w-full md:w-[80%] tracking-widest mt-4 md:mt-8 mx-auto text-sm md:text-base leading-normal`}
+          className={`${textStyle.b_para} w-full md:w-[80%] tracking-wide sm:tracking-widest mt-4 md:mt-8 mx-auto text-base leading-normal`}
         >
           Step into the legacy of success with ASCPL as we proudly showcase our
           past projects. Each venture is a testament to our commitment to
           excellence and innovation. From groundbreaking web and mobile app
           development to creating unforgettable brand identities.
-        </p>
+        </p> */}
       </div>
       <div className="mt-4 md:mt-8 pb-8">
         <CardCarousel />

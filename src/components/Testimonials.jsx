@@ -23,19 +23,16 @@ const Testimonials = () => {
           data-aos="fade-left"
         >
           <h3
-            style={{ letterSpacing: "0.4rem" }}
-            className={`${textStyles.g_heading} md:pt-10 pt-8 md:mt-16 mt-10 md:text-2xl text-[18px]  text-white  font-normal`}
+            className={`${textStyles.g_heading} tracking-wider md:tracking-[0.4rem] md:pt-10 pt-4 md:mt-10 mt-4 md:text-2xl text-[18px] text-white  font-normal`}
           >
             TESTIMONIALS
           </h3>
 
           <h2
             style={{
-              letterSpacing: "11.61px",
-
               fontWeight: "600",
             }}
-            className={`${textStyles.b_heading} text-white md:text-4xl text-[15px] `}
+            className={`${textStyles.b_heading} tracking-wider md:tracking-[11.61px] text-white md:text-4xl text-lg `}
           >
             What People Say
           </h2>
@@ -53,7 +50,7 @@ const Testimonials = () => {
           </p>
         </div>
       </div>
-      <div className="relative flex  md:mr-0 mr-[30px] md:ml-20 top-36">
+      <div className="relative flex md:mr-0 mr-[30px] md:ml-20 top-36">
         <div className="absolute md:bottom-0 bottom-[70px] left-0">
           <TestimonialCarousel testimonials={testimonials} />
         </div>

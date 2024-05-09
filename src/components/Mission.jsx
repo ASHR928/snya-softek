@@ -23,14 +23,14 @@ const Mission = () => {
           data-aos="fade-right"
         >
           <h3
-            style={{ fontFamily: "Montserrat", letterSpacing: "0.5rem" }}
-            className="flex justify-center md:justify-start font-montserrat font-normal text-tcolor md:pr-8 text-sm md:text-xl"
+            style={{ fontFamily: "Montserrat" }}
+            className="flex justify-center md:justify-start font-montserrat tracking-wider sm:tracking-widest font-normal text-tcolor md:pr-8 text-sm md:text-xl"
           >
             ABOUT US
           </h3>
           <h2
-            style={{ fontFamily: "Montserrat", letterSpacing: "0.5rem" }}
-            className="md:mt-0 flex justify-center md:justify-start mb-4 font-montserrat font-normal md:text-black sm:pr-2 sm:text-2xl md:pr-8 md:text-5xl"
+            style={{ fontFamily: "Montserrat" }}
+            className="md:mt-0 flex justify-center md:justify-start mb-4 font-montserrat tracking-wider sm:tracking-widest font-normal md:text-black sm:pr-2 text-2xl md:pr-8 md:text-5xl"
           >
             Our Mission
           </h2>
@@ -39,10 +39,9 @@ const Mission = () => {
             <p
               style={{
                 fontFamily: "Hind Madurai",
-                letterSpacing: "2.2px",
                 textAlign: "justify",
               }}
-              className="justify-center mr-4 md:max-w-xl sm:max-w-l font-normal text-left md:text-base text-sm text-black md:pr-8"
+              className="justify-center mr-4 md:max-w-xl sm:max-w-l font-normal text-center sm:text-left md:text-base sm:text-sm text-black md:pr-8 tracking-wider sm:tracking-widest"
             >
               To make software development simple and accessible.
               <br /> With a collective experience of around 13 years in the
@@ -62,7 +61,7 @@ const Mission = () => {
           <CardBody className="max-w-4xl group/card mx-auto md:mt-32 px-4 lg:ml-12 lg:px-0 flex flex-col relative z-10">
             <CardItem
               translateZ="100"
-              className="flex flex-wrap justify-center"
+              className="flex flex-wrap justify-center items-center"
             >
               <img
                 style={{
@@ -71,7 +70,7 @@ const Mission = () => {
                 }}
                 src={frame3}
                 alt="frame3"
-                className="md:max-w-full md:h-[175px] h-[80px] md:mt-0 mt-4 lg:mt-6 lg:mr-2  lg:mb-0"
+                className="md:max-w-full md:h-[175px] h-[100px] md:mt-0 mt-4 lg:mt-6 lg:mr-2  lg:mb-0"
                 data-aos="fade-down-right"
               />
               <img
@@ -81,7 +80,7 @@ const Mission = () => {
                 }}
                 src={frame2}
                 alt="frame2"
-                className="md:max-w-full md:h-[125px] md:mt-0 mt-16 md:pt-0 md:ml-0 ml-2 h-auto lg:mt-20 lg:mb-0"
+                className="md:max-w-full md:h-[125px] h-[100px] md:mt-0 sm:mt-16 md:pt-0 md:ml-0 ml-2 lg:mt-20 lg:mb-0"
                 data-aos="fade-down-left"
               />
             </CardItem>
@@ -93,7 +92,7 @@ const Mission = () => {
                 }}
                 src={frame4}
                 alt="frame4"
-                className="md:max-w-full md:h-[125px] h-[60px] md:mt-0 mt-2 md:mr-0 mr-2 lg:mt-2  lg:mr-2   lg:mb-0"
+                className="md:max-w-full md:h-[125px] h-[100px] md:mt-0 mt-2 md:mr-0 mr-2 lg:mt-2  lg:mr-2   lg:mb-0"
                 data-aos="fade-up-right"
               />
               <img
@@ -103,7 +102,7 @@ const Mission = () => {
                 }}
                 src={frame1}
                 alt="frame1"
-                className="md:max-w-full  md:h-[200px] h-[60px] md:mt-0 mt-2 lg:mt-2 mb-4 lg:mb-0"
+                className="md:max-w-full  md:h-[200px] h-[100px] md:mt-0 mt-2 lg:mt-2 mb-4 lg:mb-0"
                 data-aos="fade-up-left"
               />
             </CardItem>
