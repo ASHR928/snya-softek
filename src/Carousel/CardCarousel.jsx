@@ -25,8 +25,8 @@ const CardCarousel = () => {
           className="bg-gradient-to-tl from-[#04518A] via-[#4eaaed] to-[#FFFFFF] shadow-xl rounded-xl "
           key={project.id}
         >
-          <div className="flex flex-col sm:flex-row justify-center items-center card md:h-full md:w-full ">
-            <div className="hidden sm:flex flex-col items-center justify-center w-full  md:w-2/5 sm:border-r-2 border-gray-700 ">
+          <div className="flex flex-col ss:flex-row justify-center items-center card md:h-full md:w-full ">
+            <div className="hidden ss:flex flex-col items-center justify-center w-full  md:w-2/5 sm:border-r-2 border-gray-700 ">
               <img
                 src={project.image}
                 alt="logo"
@@ -38,7 +38,7 @@ const CardCarousel = () => {
                 style={{
                   fontFamily: "Montserrat",
                 }}
-                className={`${textStyles.bl_heading} text-center tracking-wide sm:tracking-widest text-secondary text-base md:text-3xl mx-auto md:mt-10 mt-2 pt-2 md:pt-6 w-auto md:w-[85%] `}
+                className={`${textStyles.bl_heading} text-center tracking-wide sm:tracking-widest text-secondary text-xl md:text-3xl mx-auto md:mt-10 mt-2 pt-2 md:pt-6 w-auto md:w-[85%] `}
               >
                 {project.title}
               </h2>
@@ -46,12 +46,12 @@ const CardCarousel = () => {
                 style={{
                   fontFamily: "Hind Madurai",
                 }}
-                className={`${textStyles.b_para} md:tracking-[2.8px] tracking-[1.4px] w-auto md:w-[80%] md:ml-20  pb-10 text-xxs mt-2 md:mr-20 ml-2 mr-4 md:text-base md:mt-2 md:mb-20 md:pb-4 justify-center text-left items-center`}
+                className={`${textStyles.b_para} md:tracking-[2.8px] tracking-[1.4px] w-auto md:w-[80%] md:ml-20  pb-10 text-xxs mt-2 md:mr-20 ml-2 mr-4 ss:text-base md:mt-2 md:mb-20 md:pb-4 justify-center text-left items-center`}
               >
                 {project.content}
               </p>
               <div
-                className="md:text-7xl text-2xl font-semibold absolute right-1 bottom-0"
+                className="text-2xl ss:text-4xl md:text-7xl  font-semibold absolute right-1 bottom-0"
                 style={{
                   fontFamily: "Montserrat",
                   letterSpacing: "5.4px",

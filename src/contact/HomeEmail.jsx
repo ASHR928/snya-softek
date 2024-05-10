@@ -36,7 +36,7 @@ const HomeEmail = () => {
           onChange={(e) => setEmail(e.target.value)}
           // onChange={handleInputChange}
           placeholder="Enter your email"
-          className="border border-gray-300 md:w-[750px] rounded-l-xl px-4 py-2 w-64px focus:outline-none focus:border-blue-500 sm:h-12"
+          className="border border-gray-300 w-[360px] sm:w-[500px] md:w-[750px] rounded-l-xl px-4 py-2 w-64px focus:outline-none focus:border-blue-500 sm:h-12"
         />
         <button
           type="submit"
@@ -45,7 +45,8 @@ const HomeEmail = () => {
           style={{
             background:
               "linear-gradient(180deg, #25A0FB 0%, #0886E3 0.01%, #68BFFF 72.4%, #B3DEFD 100%)",
-          }}>
+          }}
+        >
           Let's talk
         </button>
       </div>

@@ -34,22 +34,22 @@ const Certifications = () => {
       <div className="flex-col px-2" data-aos="fade-right">
         <h3
           style={{ fontFamily: "Montserrat" }}
-          className={`${textStyle.g_heading} md:pt-8 text-white md:text-2xl justify-start sm:justify-center font-montserrat text-2xl lg:text-2xl tracking-wider sm:tracking-[8px] `}
+          className={`${textStyle.g_heading} md:pt-8 text-white md:text-2xl justify-start sm:justify-center font-montserrat text-base sm:text-xl tracking-wider sm:tracking-[8px] `}
         >
           Certifications
         </h3>
         <h2
           style={{ fontFamily: "Montserrat" }}
-          className={`${textStyle.b_heading} md:text-5xl justify-start sm:justify-center font-montserrat margin-auto text-4xl lg:text-5xl tracking-wider sm:tracking-[6.7px]  `}
+          className={`${textStyle.b_heading} md:text-5xl justify-start sm:justify-center font-montserrat margin-auto text-2xl sm:text-5xl tracking-wider sm:tracking-[6.7px]  `}
         >
           Why ASCPL
         </h2>
       </div>
       {!isSmallScreen ? (
-        <div className="flex md:ml-[110px] md:pb-10">
+        <div className="flex sm:ml-[50px] md:ml-[110px] sm:pb-5 md:pb-10">
           <Reveal>
             <CardContainer className=" flex flex-start border-black">
-              <CardBody className="cardbg group/card shadow-xl md:w-[350px] justify-center items-center text-center  md:rounded-xl md:pt-[34px] md:pb-[40px] md:pr-[70px] md:pl-[70px] bg-white">
+              <CardBody className="cardbg group/card shadow-xl sm:w-[250px] md:w-[350px] justify-center items-center text-center sm:rounded-xl sm:pt-[20px] md:pt-[34px] sm:pb-[24px] md:pb-[40px] sm:px-[35px] md:px-[70px] bg-white">
                 <CardItem translateZ="100">
                   <img src={cmi2} alt="smi" className=" " />
                 </CardItem>
@@ -57,15 +57,15 @@ const Certifications = () => {
             </CardContainer>
           </Reveal>
           <Reveal>
-            <CardContainer className=" flex flex-start border-black">
-              <CardBody className="cardbg group/card rounded-xl md:ml-10 md:w-[350px] shadow-xl md:pt-[30px] md:pb-[32px] justify-center items-center text-center md:pr-[40px] md:pl-[40px]">
+            <CardContainer className="flex flex-start border-black">
+              <CardBody className="cardbg group/card rounded-xl sm:ml-6 md:ml-10 sm:w-[250px] md:w-[350px] shadow-xl sm:pt-[20px] md:pt-[30px] sm:pb-[24px] md:pb-[32px] justify-center items-center text-center sm:px-[5px] md:px-[40px] ">
                 <CardItem translateZ="100">
                   <div className="flex ">
-                    <img src={iso} alt="iso" className="mr-4" />
-                    <img src={iso} alt="iso" className="ml-6" />
+                    <img src={iso} alt="iso" className="sm:mr-2 md:mr-4" />
+                    <img src={iso} alt="iso" className="sm:ml-1 md:ml-6" />
                   </div>
                   <div className="ml-4 ">
-                    <img src={iso} alt="iso" className="ml-16" />
+                    <img src={iso} alt="iso" className="sm:ml-14 md:ml-16" />
                   </div>
                 </CardItem>
               </CardBody>
@@ -73,7 +73,7 @@ const Certifications = () => {
           </Reveal>
           <Reveal>
             <CardContainer className="flex flex-start border-black">
-              <CardBody className="group/card cardbg rounded-xl md:ml-10 md:w-[350px] shadow-xl md:pt-[60px] md:pb-[60px]  md:pr-[40px] md:pl-[40px]">
+              <CardBody className="group/card cardbg rounded-xl sm:ml-6 md:ml-10 sm:w-[250px] md:w-[350px] shadow-xl sm:py-[40px] md:py-[60px] sm:px-[14px] md:px-[40px] ">
                 <CardItem translateZ="100">
                   <img src={msme} alt="smi" className="" />
                 </CardItem>

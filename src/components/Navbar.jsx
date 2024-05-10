@@ -54,7 +54,7 @@ const Navbar = () => {
       </div>
 
       <div className="hidden sm:flex justify-center flex-1">
-        <ul className="list-none flex space-x-14">
+        <ul className="list-none flex space-x-6 md:space-x-14">
           {navLinks.map((nav) => (
             <li
               key={nav.id}
@@ -66,7 +66,7 @@ const Navbar = () => {
         </ul>
       </div>
 
-      <div className="flex justify-end items-center">
+      <div className="hidden md:flex justify-end items-center">
         <img
           src={cmi}
           alt="cmi"

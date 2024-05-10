@@ -24,13 +24,13 @@ const Mission = () => {
         >
           <h3
             style={{ fontFamily: "Montserrat" }}
-            className="flex justify-center md:justify-start font-montserrat tracking-wider sm:tracking-widest font-normal text-tcolor md:pr-8 text-sm md:text-xl"
+            className="flex justify-center md:justify-start font-montserrat tracking-wider sm:tracking-widest font-normal text-tcolor md:pr-8 text-base sm:text-xl"
           >
             ABOUT US
           </h3>
           <h2
             style={{ fontFamily: "Montserrat" }}
-            className="md:mt-0 flex justify-center md:justify-start mb-4 font-montserrat tracking-wider sm:tracking-widest font-normal md:text-black sm:pr-2 text-2xl md:pr-8 md:text-5xl"
+            className="md:mt-0 flex justify-center md:justify-start mb-4 font-montserrat tracking-wider sm:tracking-widest font-normal md:text-black sm:pr-2 md:pr-8 text-2xl sm:text-5xl"
           >
             Our Mission
           </h2>
@@ -41,7 +41,7 @@ const Mission = () => {
                 fontFamily: "Hind Madurai",
                 textAlign: "justify",
               }}
-              className="justify-center mr-4 md:max-w-xl sm:max-w-l font-normal text-center sm:text-left md:text-base sm:text-sm text-black md:pr-8 tracking-wider sm:tracking-widest"
+              className="justify-center mr-4 md:max-w-xl sm:max-w-l font-normal text-center sm:text-left sm:text-xl text-sm text-black md:pr-8 tracking-wider sm:tracking-widest"
             >
               To make software development simple and accessible.
               <br /> With a collective experience of around 13 years in the

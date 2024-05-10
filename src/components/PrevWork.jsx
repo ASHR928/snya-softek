@@ -15,13 +15,13 @@ const PrevWork = () => {
     <section className="flex-col flex mt-14 ">
       <div className="flex flex-col mx-14" data-aos="fade-up">
         <h1
-          className={`${textStyles.g_heading} tracking-wide sm:tracking-widest uppercase mb-2 text-lg md:text-xl lg:text-2xl`}
+          className={`${textStyles.g_heading} tracking-wide sm:tracking-widest uppercase mb-2 text-2xl sm:text-5xl`}
         >
           Our Esteemed Clients
         </h1>
 
         <p
-          className={`${textStyles.b_para} text-sm max-w-5xl md:text-base lg:text-lg`}
+          className={`${textStyles.b_para} text-sm max-w-5xl sm:text-base md:text-lg`}
         >
           We take pride in collaborating with visionary organizations across
           industries, transforming challenges into opportunities. Join our

@@ -76,7 +76,7 @@ const Home = () => {
               alt={service.title}
               className="mb-2 w-[60px] cursor-pointer"
             />
-            <p className="font-montserrat text-sm md:text-base text-center">
+            <p className="font-montserrat text-sm sm:text-base text-center">
               {service.title}
             </p>
           </div>
