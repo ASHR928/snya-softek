@@ -1,7 +1,6 @@
 import { navLinks } from "../constants";
 import logo from "../assets/anya-logo.svg";
 import cmi from "../assets/home/cmi.svg";
-
 import menu from "../assets/home/menu.svg";
 import cross from "../assets/home/cross.svg";
 import { useState, useEffect, useRef } from "react";
@@ -59,7 +58,7 @@ const Navbar = () => {
           {navLinks.map((nav) => (
             <li
               key={nav.id}
-              className="font-montserrat text-xl text-black hover:scale-110"
+              className="font-montserrat text-xl text-black hover:scale-110 hover:font-semibold cursor-pointer transition-all duration-300 ease-in-out"
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
