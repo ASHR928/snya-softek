@@ -43,8 +43,12 @@ const Projects = () => {
           development to creating unforgettable brand identities.
         </p> */}
       </div>
-      <div className="mt-4 md:mt-8 pb-8">
-        <CardCarousel />
+      <div className="mt-8 md:mt-14 pb-8 relative" data-aos="zoom-out">
+        <div className="absolute -top-3 left-2 sm:-top-3 sm:left-10 md:-top-6 md:left-16 w-[200px] sm:w-[310px] md:w-[510px] h-40 sm:h-52 md:h-80 rounded-xl border-4 border-white "></div>
+        <div className="absolute bottom-8 sm:bottom-10 md:bottom-12 right-4 sm:right-8 md:right-14 w-[200px] sm:w-[310px] md:w-[510px] h-20 sm:h-32 md:h-40 border-4 rounded-xl border-white "></div>
+        <div className="h-full w-full flex flex-row items-center mb-4 md:mb-10 ">
+          <CardCarousel className="z-10" />
+        </div>
       </div>
     </section>
   );

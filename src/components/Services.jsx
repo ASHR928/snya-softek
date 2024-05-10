@@ -92,7 +92,7 @@ const ServicePage = () => {
         </div>
       </div>
 
-      <div className="flex mt-4 md:mt-10 md:ml-32" data-aos="flip-down">
+      <div className="flex mt-4 md:mt-10 ml-4 md:ml-32" data-aos="flip-down">
         <motion.div className="flex flex-wrap md:flex-nowrap gap-1 justify-center mr-4  ">
           {services2.slice(4).map((service) => (
             <motion.div
@@ -105,7 +105,7 @@ const ServicePage = () => {
               onHoverEnd={() => setHoveredCardIndex2(null)}
               layout
               transition={{ layout: { duration: 0.6, type: "spring" } }}
-              className="flex shadow-lg cursor-pointer justify-center w-[40%] md:w-[80%]  pt-1 md:pt-[1rem] items-center pb-2 md:pb-4 text-center flex-col md:mr-20 px-2 px md:px-4  border-2"
+              className="flex shadow-lg cursor-pointer justify-center w-[40%] md:w-[80%] pt-1 md:pt-[1rem] items-center pb-2 md:pb-4 text-center flex-col md:mr-20 px-2 px md:px-4 border-2 "
             >
               <motion.img
                 layout

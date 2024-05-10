@@ -12,8 +12,8 @@ const PrevWork = () => {
   }, []);
 
   return (
-    <section className="flex-col flex ">
-      <div className="flex flex-col ml-4 md:ml-32" data-aos="fade-up">
+    <section className="flex-col flex mt-14 ">
+      <div className="flex flex-col mx-14" data-aos="fade-up">
         <h1
           className={`${textStyles.g_heading} tracking-wide sm:tracking-widest uppercase mb-2 text-lg md:text-xl lg:text-2xl`}
         >
@@ -30,7 +30,7 @@ const PrevWork = () => {
         </p>
       </div>
 
-      <div className="md:mt-4 mt-4 mr-4 md:pr-6  md:ml-10 md:mr-10 mb-8 md:max-w-full">
+      <div className="md:mt-4 mt-4 mr-4 md:pr-6 mb-8 md:max-w-full">
         <Slider />
       </div>
     </section>
