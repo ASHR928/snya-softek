@@ -16,12 +16,10 @@ const Projects = () => {
     <section
       id="projects"
       className="mt-4 flex justify-center text-center flex-col bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: `url(${projectsBg})` }}
-    >
+      style={{ backgroundImage: `url(${projectsBg})` }}>
       <div
         className="flex justify-center items-center flex-col mx-4 md:mx-8"
-        data-aos="fade-right"
-      >
+        data-aos="fade-right">
         {/* <h3
           style={{ letterSpacing: "0.5rem" }}
           className={`${textStyle.g_heading} mt-2 md:mt-4 text-base md:text-xl tracking-wide sm:tracking-widest leading-normal`}
@@ -31,8 +29,7 @@ const Projects = () => {
 
         <h1
           style={{ letterSpacing: "0.4rem" }}
-          className={`${textStyle.b_heading} text-white mt-2 md:mt-4 tracking-wide sm:tracking-widest text-3xl md:text-5xl`}
-        >
+          className={`${textStyle.b_heading} text-white mt-2 md:mt-4 tracking-wide sm:tracking-widest text-3xl md:text-5xl`}>
           OUR PROJECTS
         </h1>
 
